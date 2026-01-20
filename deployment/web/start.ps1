@@ -1,0 +1,1 @@
+C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126\modeler\tools\node\win-x64\node.exe C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126\modeler\tools\node\node_modules\rollup\dist\bin\rollup -c -w

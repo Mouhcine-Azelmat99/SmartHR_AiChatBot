@@ -1,0 +1,35 @@
+ext {
+	mendixJavaVersion = 21
+	mendixInstallDir = "C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126"
+	projectName = "SmartHRAssistance"
+	projectSafeName = "SmartHRAssistance"
+	mendixProjectDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance"
+	deploymentDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment"
+	dataSnapshotFile = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/data-snapshot.zip"
+	dataDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/data"
+	extractDataSnapshot = false
+	templatesDir = "C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126/modeler/runtemplates"
+	runDir = "run"
+	compileTargetDir = "run/bin"
+	deploymentDirName = "deployment"
+	modelDirName = "model"
+	resourcesDirName = "resources"
+	javaSourceDirName = "javasource"
+	libDirName = "lib"
+	userlibDirName = "userlib"
+	vendorlibDirName = "vendorlib"
+	generateFullDebugInfo = false
+	excludedRunTemplatesFiles = [
+		"**/*.template"
+	]
+	publicApiJars = [
+		"runtime/bundles/com.mendix.json.jar",
+		"runtime/bundles/com.mendix.logging-api.jar",
+		"runtime/bundles/com.mendix.m2ee-api.jar",
+		"runtime/bundles/com.mendix.public-api.jar",
+		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-servlet-api.jar",
+		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-javax-websocket-api.jar"
+	]
+	excludedJars = []
+	protectedModules = []
+}

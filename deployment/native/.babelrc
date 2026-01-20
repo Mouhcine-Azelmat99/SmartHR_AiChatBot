@@ -1,0 +1,14 @@
+{
+  "presets": ["module:C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/@react-native/babel-preset"],
+  "plugins": [
+    [
+      "C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/babel-plugin-inline-import",
+      {
+        "extensions": [".svg"]
+      }
+    ],
+    [
+      "module:C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/react-native-reanimated/plugin"
+    ]
+  ]
+}

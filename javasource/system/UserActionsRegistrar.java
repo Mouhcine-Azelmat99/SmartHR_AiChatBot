@@ -139,6 +139,11 @@ public class UserActionsRegistrar
     registrator.registerUserAction(conversationalui.actions.ProviderConfig_SetActionMicroflow.class);
     registrator.registerUserAction(conversationalui.actions.TraceFiltering_CalculateDurationPercentile.class);
     registrator.registerUserAction(conversationalui.actions.TraceFiltering_GetUniqueConversationCount.class);
+    registrator.registerUserAction(databaseconnector.actions.ExecuteCallableStatement.class);
+    registrator.registerUserAction(databaseconnector.actions.ExecuteParameterizedQuery.class);
+    registrator.registerUserAction(databaseconnector.actions.ExecuteParameterizedStatement.class);
+    registrator.registerUserAction(databaseconnector.actions.ExecuteQuery.class);
+    registrator.registerUserAction(databaseconnector.actions.ExecuteStatement.class);
     registrator.registerUserAction(encryption.actions.DecryptString.class);
     registrator.registerUserAction(encryption.actions.EncryptString.class);
     registrator.registerUserAction(encryption.actions.GeneratePGPKeyRing.class);
@@ -181,6 +186,11 @@ public class UserActionsRegistrar
     registrator.registerUserAction(openaiconnector.actions.RequestMapping_ManipulateJson.class);
     registrator.registerUserAction(openaiconnector.actions.Response_SetToolArguments.class);
     registrator.registerUserAction(pdfextraction.actions.PDFContent_CreateFromFile.class);
+    registrator.registerUserAction(pgvectorknowledgebase.actions.KnowledgeBaseChunkList_Delete_ByMxObject.class);
+    registrator.registerUserAction(pgvectorknowledgebase.actions.KnowledgeBaseChunkList_Delete_ByMxObjectList.class);
+    registrator.registerUserAction(pgvectorknowledgebase.actions.KnowledgeBaseChunkList_Retrieve.class);
+    registrator.registerUserAction(pgvectorknowledgebase.actions.KnowledgeBaseChunkList_Retrieve_SetAssociation.class);
+    registrator.registerUserAction(pgvectorknowledgebase.actions.KnowledgeBaseChunkList_RetrieveNearestNeighbors_SetAssociation.class);
     registrator.registerUserAction(system.actions.VerifyPassword.class);
   }
 }

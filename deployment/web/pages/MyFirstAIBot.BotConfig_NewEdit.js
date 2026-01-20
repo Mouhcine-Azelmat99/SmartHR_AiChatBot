@@ -76,7 +76,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 style={undefined}
                                 tabIndex={undefined}
                                 object={AssociationObjectProperty({
-                                    "dataSourceId": "p.20",
+                                    "dataSourceId": "p.22",
                                     "scope": "$BotConfig",
                                     "editable": true
                                 })}
@@ -539,7 +539,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         style={undefined}
                                         tabIndex={undefined}
                                         object={AssociationObjectProperty({
-                                            "dataSourceId": "p.53",
+                                            "dataSourceId": "p.55",
                                             "scope": "$BotConfig",
                                             "editable": true,
                                             "path": "ConversationalUI.ProviderConfig_DeployedModel/AmazonBedrockConnector.BedrockDeployedModel",
@@ -1173,7 +1173,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         style={undefined}
                                         tabIndex={undefined}
                                         object={AssociationObjectProperty({
-                                            "dataSourceId": "p.136",
+                                            "dataSourceId": "p.138",
                                             "scope": "$BotConfig",
                                             "editable": true,
                                             "path": "ConversationalUI.ProviderConfig_DeployedModel/OpenAIConnector.OpenAIDeployedModel",
@@ -1320,7 +1320,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         style={undefined}
                                         tabIndex={undefined}
                                         object={AssociationObjectProperty({
-                                            "dataSourceId": "p.145",
+                                            "dataSourceId": "p.147",
                                             "scope": "$BotConfig",
                                             "editable": true,
                                             "path": "ConversationalUI.ProviderConfig_DeployedModel/MxGenAIConnector.MxCloudDeployedModel",
@@ -1460,7 +1460,295 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ]} />
                                         ]}
                                         hideFooter={false}
-                                        footer={undefined} />
+                                        footer={undefined} />,
+                                    <$FormGroup key="p.MyFirstAIBot.BotConfig_NewEdit.comboBox2$formGroup"
+                                        $widgetId="p.MyFirstAIBot.BotConfig_NewEdit.comboBox2$formGroup"
+                                        class={"mx-name-comboBox2"}
+                                        style={undefined}
+                                        control={[
+                                            <$Combobox key="p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                                                $widgetId="p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                                                source={"context"}
+                                                optionsSourceType={"association"}
+                                                optionsSourceDatabaseDataSource={undefined}
+                                                optionsSourceDatabaseCaptionType={"attribute"}
+                                                optionsSourceDatabaseDefaultValue={undefined}
+                                                attributeAssociation={AssociationProperty({
+                                                    "type": "Reference",
+                                                    "entity": "MyFirstAIBot.BotConfig",
+                                                    "path": "",
+                                                    "attribute": "MyFirstAIBot.BotConfig_EmbeddingDeployedModel",
+                                                    "endpointEntity": "GenAICommons.DeployedModel",
+                                                    "selectableObjectsId": "p.8",
+                                                    "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                                    "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                                })}
+                                                optionsSourceAssociationDataSource={DatabaseObjectListProperty({
+                                                    "dataSourceId": "p.8",
+                                                    "entity": "GenAICommons.DeployedModel",
+                                                    "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                                    "operationId": "y2kQzmrp9F+lzbaxeZ4vIQ",
+                                                    "sort": []
+                                                })}
+                                                optionsSourceAssociationCaptionType={"attribute"}
+                                                optionsSourceAssociationCaptionAttribute={ListAttributeProperty({
+                                                    "path": "",
+                                                    "entity": "GenAICommons.DeployedModel",
+                                                    "attribute": "DisplayName",
+                                                    "attributeType": "String",
+                                                    "sortable": true,
+                                                    "filterable": true,
+                                                    "dataSourceId": "p.8",
+                                                    "isList": false
+                                                })}
+                                                optionsSourceAssociationCaptionExpression={undefined}
+                                                optionsSourceStaticDataSource={[]}
+                                                emptyOptionText={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                    })
+                                                ])}
+                                                filterType={"contains"}
+                                                noOptionsText={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                    })
+                                                ])}
+                                                clearable={true}
+                                                optionsSourceAssociationCustomContentType={"no"}
+                                                optionsSourceAssociationCustomContent={undefined}
+                                                optionsSourceDatabaseCustomContentType={"no"}
+                                                staticDataSourceCustomContentType={"no"}
+                                                showFooter={false}
+                                                menuFooterContent={undefined}
+                                                selectionMethod={"checkbox"}
+                                                selectedItemsStyle={"text"}
+                                                selectAllButton={false}
+                                                selectAllButtonCaption={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Select all" }, "args": {} }
+                                                    })
+                                                ])}
+                                                readOnlyStyle={"text"}
+                                                onChangeEvent={undefined}
+                                                onEnterEvent={undefined}
+                                                onLeaveEvent={undefined}
+                                                ariaRequired={false}
+                                                clearButtonAriaLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
+                                                    })
+                                                ])}
+                                                removeValueAriaLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Remove value" }, "args": {} }
+                                                    })
+                                                ])}
+                                                a11ySelectedValue={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Selected value:" }, "args": {} }
+                                                    })
+                                                ])}
+                                                a11yOptionsAvailable={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Number of options available:" }, "args": {} }
+                                                    })
+                                                ])}
+                                                a11yInstructions={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Use up and down arrow keys to navigate. Press Enter or Space Bar keys to select." }, "args": {} }
+                                                    })
+                                                ])}
+                                                lazyLoading={true}
+                                                loadingType={"spinner"}
+                                                tabIndex={undefined}
+                                                id={DerivedUniqueIdProperty({
+                                                    "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                                                })} />
+                                        ]}
+                                        caption={t([
+                                            ExpressionProperty({
+                                                "expression": { "expr": { "type": "literal", "value": "Embedding Model" }, "args": {} }
+                                            })
+                                        ])}
+                                        labelFor={DerivedUniqueIdProperty({
+                                            "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                                        })}
+                                        width={undefined}
+                                        orientation={"vertical"}
+                                        hasError={ValidationProperty({
+                                            "inputWidgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                                        })} />,
+                                    <$FormGroup key="p.MyFirstAIBot.BotConfig_NewEdit.comboBox1$formGroup"
+                                        $widgetId="p.MyFirstAIBot.BotConfig_NewEdit.comboBox1$formGroup"
+                                        class={"mx-name-comboBox1"}
+                                        style={undefined}
+                                        control={[
+                                            <$Combobox key="p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                                                $widgetId="p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                                                source={"context"}
+                                                optionsSourceType={"association"}
+                                                optionsSourceDatabaseDataSource={undefined}
+                                                optionsSourceDatabaseCaptionType={"attribute"}
+                                                optionsSourceDatabaseDefaultValue={undefined}
+                                                attributeAssociation={AssociationProperty({
+                                                    "type": "Reference",
+                                                    "entity": "MyFirstAIBot.BotConfig",
+                                                    "path": "",
+                                                    "attribute": "MyFirstAIBot.BotConfig_DatabaseConfiguration",
+                                                    "endpointEntity": "PgVectorKnowledgeBase.DatabaseConfiguration",
+                                                    "selectableObjectsId": "p.9",
+                                                    "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                                    "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                                })}
+                                                optionsSourceAssociationDataSource={DatabaseObjectListProperty({
+                                                    "dataSourceId": "p.9",
+                                                    "entity": "PgVectorKnowledgeBase.DatabaseConfiguration",
+                                                    "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                                    "operationId": "Oe43FVYJJ1CMeZjLg/fjGA",
+                                                    "sort": []
+                                                })}
+                                                optionsSourceAssociationCaptionType={"attribute"}
+                                                optionsSourceAssociationCaptionAttribute={ListAttributeProperty({
+                                                    "path": "",
+                                                    "entity": "PgVectorKnowledgeBase.DatabaseConfiguration",
+                                                    "attribute": "DisplayName",
+                                                    "attributeType": "String",
+                                                    "sortable": true,
+                                                    "filterable": true,
+                                                    "dataSourceId": "p.9",
+                                                    "isList": false
+                                                })}
+                                                optionsSourceAssociationCaptionExpression={undefined}
+                                                optionsSourceStaticDataSource={[]}
+                                                emptyOptionText={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                    })
+                                                ])}
+                                                filterType={"contains"}
+                                                noOptionsText={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                    })
+                                                ])}
+                                                clearable={true}
+                                                optionsSourceAssociationCustomContentType={"no"}
+                                                optionsSourceAssociationCustomContent={undefined}
+                                                optionsSourceDatabaseCustomContentType={"no"}
+                                                staticDataSourceCustomContentType={"no"}
+                                                showFooter={false}
+                                                menuFooterContent={undefined}
+                                                selectionMethod={"checkbox"}
+                                                selectedItemsStyle={"text"}
+                                                selectAllButton={false}
+                                                selectAllButtonCaption={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Select all" }, "args": {} }
+                                                    })
+                                                ])}
+                                                readOnlyStyle={"text"}
+                                                onChangeEvent={undefined}
+                                                onEnterEvent={undefined}
+                                                onLeaveEvent={undefined}
+                                                ariaRequired={false}
+                                                clearButtonAriaLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
+                                                    })
+                                                ])}
+                                                removeValueAriaLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Remove value" }, "args": {} }
+                                                    })
+                                                ])}
+                                                a11ySelectedValue={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Selected value:" }, "args": {} }
+                                                    })
+                                                ])}
+                                                a11yOptionsAvailable={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Number of options available:" }, "args": {} }
+                                                    })
+                                                ])}
+                                                a11yInstructions={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Use up and down arrow keys to navigate. Press Enter or Space Bar keys to select." }, "args": {} }
+                                                    })
+                                                ])}
+                                                lazyLoading={true}
+                                                loadingType={"spinner"}
+                                                tabIndex={undefined}
+                                                id={DerivedUniqueIdProperty({
+                                                    "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                                                })} />
+                                        ]}
+                                        caption={t([
+                                            ExpressionProperty({
+                                                "expression": { "expr": { "type": "literal", "value": "DatabaseConfiguration" }, "args": {} }
+                                            })
+                                        ])}
+                                        labelFor={DerivedUniqueIdProperty({
+                                            "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                                        })}
+                                        width={undefined}
+                                        orientation={"vertical"}
+                                        hasError={ValidationProperty({
+                                            "inputWidgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                                        })} />,
+                                    <$FormGroup key="p.MyFirstAIBot.BotConfig_NewEdit.textBox1$formGroup"
+                                        $widgetId="p.MyFirstAIBot.BotConfig_NewEdit.textBox1$formGroup"
+                                        class={"mx-name-textBox1 mx-textbox"}
+                                        style={undefined}
+                                        control={[
+                                            <$TextBox key="p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                                                $widgetId="p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                                                inputValue={AttributeProperty({
+                                                    "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                                    "path": "",
+                                                    "entity": "MyFirstAIBot.BotConfig",
+                                                    "attribute": "KnowledgeBaseName",
+                                                    "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false },
+                                                    "isList": false,
+                                                    "validation": null,
+                                                    "formatting": { }
+                                                })}
+                                                isPassword={false}
+                                                placeholder={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                    })
+                                                ])}
+                                                mask={""}
+                                                readOnlyStyle={"control"}
+                                                maxLength={200}
+                                                onEnter={undefined}
+                                                onLeave={undefined}
+                                                onEnterKeyPress={undefined}
+                                                ariaLabel={undefined}
+                                                autocomplete={"on"}
+                                                submitWhileEditing={false}
+                                                submitDelay={300}
+                                                ariaRequired={undefined}
+                                                tabIndex={undefined}
+                                                id={DerivedUniqueIdProperty({
+                                                    "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                                                })} />
+                                        ]}
+                                        caption={t([
+                                            ExpressionProperty({
+                                                "expression": { "expr": { "type": "literal", "value": "Knowledge base name" }, "args": {} }
+                                            })
+                                        ])}
+                                        labelFor={DerivedUniqueIdProperty({
+                                            "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                                        })}
+                                        width={undefined}
+                                        orientation={"vertical"}
+                                        hasError={ValidationProperty({
+                                            "inputWidgetId": "p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                                        })} />
                                 ]}
                                 hideFooter={false}
                                 footer={[

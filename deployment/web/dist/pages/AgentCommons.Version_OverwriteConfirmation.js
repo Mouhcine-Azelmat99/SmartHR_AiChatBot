@@ -1,14 +1,14 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-B-pQLZz2.js';
-import { PageFragment, ExpressionProperty } from '../Placeholder-C1uYYDJ5.js';
-import { ActionButton, ActionProperty } from '../ActionButton-C47bDiwH.js';
-import { TextProperty } from '../TextProperty-ukMsrrP8.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C-2xhd5O.js';
-import { Container } from '../Container-CTbE-yQS.js';
-import { Div } from '../Div-C2k8MuH7.js';
-import { Text } from '../Text-5NmEA291.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-D5lHkh-a.js';
-import '../InlineText-CcVi-f0x.js';
-import '../ScrollContainer-B-pXvHDA.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-BgmvTcvh.js';
+import { PageFragment, ExpressionProperty } from '../Placeholder-Cb4MO343.js';
+import { ActionButton, ActionProperty } from '../ActionButton-7BeRw6Eb.js';
+import { TextProperty } from '../TextProperty-BV2oKBbq.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-D6sB2G5T.js';
+import { Container } from '../Container-LyamVXag.js';
+import { Div } from '../Div-DznaFJxI.js';
+import { Text } from '../Text-mON8QAZM.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-CdvE1MzX.js';
+import '../InlineText-D4EmJMFt.js';
+import '../ScrollContainer-U0HrQ4Hh.js';
 
 const React = { createElement: reactExports.createElement };
 const { $Div, $Container, $Text, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ Div, Container, Text, ConditionalVisibilityWrapper, ActionButton });

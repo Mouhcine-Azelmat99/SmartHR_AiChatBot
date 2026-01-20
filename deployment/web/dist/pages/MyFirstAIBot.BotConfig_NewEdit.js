@@ -1,43 +1,43 @@
-import { reactExports, asPluginWidgets, addEnumerations, selectTranslation } from '../index-B-pQLZz2.js';
-import { PageFragment, ExpressionProperty } from '../Placeholder-C1uYYDJ5.js';
-import { ActionButton, ActionProperty } from '../ActionButton-C47bDiwH.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-BrlLyOx6.js';
-import { AssociationProperty } from '../AssociationProperty-Dro-5rqe.js';
-import '../AttributeProperty-CBmdvzfK.js';
-import { DatabaseObjectListProperty } from '../DatabaseObjectListProperty-Dk1DF3Sc.js';
-import { DerivedUniqueIdProperty } from '../DerivedUniqueIdProperty-QeaM9GtQ.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-CJPrRUfN.js';
-import { MicroflowObjectListProperty } from '../MicroflowObjectListProperty-BG_DSlew.js';
-import { TemplatedWidgetProperty } from '../TemplatedWidgetProperty-viDAZSOp.js';
-import { TextProperty } from '../TextProperty-ukMsrrP8.js';
-import { FormGroup, ValidationProperty } from '../FormGroup-yCagykDW.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-D6HpETLo.js';
-import { ComboboxWidgetModule } from '../Combobox-DFFkbHK0.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C-2xhd5O.js';
-import { Container } from '../Container-CTbE-yQS.js';
-import { DataView } from '../DataView-DtIsQy7l.js';
-import { Div } from '../Div-C2k8MuH7.js';
-import { ImageWidgetModule } from '../Image-CwuIpbpH.js';
-import { RadioButtonGroup } from '../RadioButtonGroup-Dw7gZsmC.js';
-import { Text } from '../Text-5NmEA291.js';
-import { TextBox } from '../TextBox-C2Olp2tK.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-D5lHkh-a.js';
-import { AttributeProperty } from '../CTQxk13g-BDTc581w.js';
-import '../CkBXggmw-CEa7-Kz-.js';
-import '../UeptbR6O-9Cnv5Sxb.js';
-import '../uEIG9e6s-CoI72Q4o.js';
-import '../CxoxYXlg-rXnL4f6K.js';
-import '../CTcC6PjV-CLE6jBCq.js';
-import '../BMuJrVqQ-C_cqhczO.js';
-import '../CxMFexew-C1GWnP8G.js';
-import '../bdxqAC6d-ISZWqfJE.js';
-import '../index-CgEeXS6W.js';
-import '../B7_8A3ct-CdkfAVjR.js';
-import '../F-L0MxFU-D5sOd2X2.js';
-import '../DxNyuBBG-CO3699Ph.js';
-import '../InlineText-CcVi-f0x.js';
-import '../B6nacfjo-Di-qGXS2.js';
-import '../ScrollContainer-B-pXvHDA.js';
+import { reactExports, asPluginWidgets, addEnumerations, selectTranslation } from '../index-BgmvTcvh.js';
+import { PageFragment, ExpressionProperty } from '../Placeholder-Cb4MO343.js';
+import { ActionButton, ActionProperty } from '../ActionButton-7BeRw6Eb.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-ALaVt2gM.js';
+import { AssociationProperty } from '../AssociationProperty-BQ-xenUM.js';
+import '../AttributeProperty-DLZOHEVl.js';
+import { DatabaseObjectListProperty } from '../DatabaseObjectListProperty-Cmtbu3ww.js';
+import { DerivedUniqueIdProperty } from '../DerivedUniqueIdProperty-Bivq5vCz.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-Dsd9EADd.js';
+import { MicroflowObjectListProperty } from '../MicroflowObjectListProperty-BR95nzdd.js';
+import { TemplatedWidgetProperty } from '../TemplatedWidgetProperty-V0FBuqFr.js';
+import { TextProperty } from '../TextProperty-BV2oKBbq.js';
+import { FormGroup, ValidationProperty } from '../FormGroup-Clh5YKWK.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-C3LJYoNm.js';
+import { ComboboxWidgetModule } from '../Combobox-kwA1_Kpz.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-D6sB2G5T.js';
+import { Container } from '../Container-LyamVXag.js';
+import { DataView } from '../DataView-BlzHzMI2.js';
+import { Div } from '../Div-DznaFJxI.js';
+import { ImageWidgetModule } from '../Image-CNc12AI2.js';
+import { RadioButtonGroup } from '../RadioButtonGroup-DfkQ2jWG.js';
+import { Text } from '../Text-mON8QAZM.js';
+import { TextBox } from '../TextBox-Fm7_ARBG.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-CdvE1MzX.js';
+import { AttributeProperty } from '../CTQxk13g-Cpo2G8Em.js';
+import '../CkBXggmw-DpOc9R4C.js';
+import '../UeptbR6O-BTpvn_SV.js';
+import '../uEIG9e6s-BfLfin4i.js';
+import '../CxoxYXlg-DglkwELR.js';
+import '../CTcC6PjV-DYXKqvux.js';
+import '../BMuJrVqQ-CCtMHjkn.js';
+import '../CxMFexew-Djrc9cTX.js';
+import '../bdxqAC6d-DXeZKQMd.js';
+import '../index-BuuMIVCm.js';
+import '../B7_8A3ct-D5Y5qINW.js';
+import '../F-L0MxFU-C_ISpEfs.js';
+import '../DxNyuBBG-BPeNmzCp.js';
+import '../InlineText-D4EmJMFt.js';
+import '../B6nacfjo-CjNcAaDz.js';
+import '../ScrollContainer-U0HrQ4Hh.js';
 
 const React = { createElement: reactExports.createElement };
 const Combobox = Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "Combobox")?.value || Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "default")?.value;
@@ -93,7 +93,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                         style: void 0,
                         tabIndex: void 0,
                         object: AssociationObjectProperty({
-                          "dataSourceId": "p.20",
+                          "dataSourceId": "p.22",
                           "scope": "$BotConfig",
                           "editable": true
                         }),
@@ -654,7 +654,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               style: void 0,
                               tabIndex: void 0,
                               object: AssociationObjectProperty({
-                                "dataSourceId": "p.53",
+                                "dataSourceId": "p.55",
                                 "scope": "$BotConfig",
                                 "editable": true,
                                 "path": "ConversationalUI.ProviderConfig_DeployedModel/AmazonBedrockConnector.BedrockDeployedModel",
@@ -1523,7 +1523,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               style: void 0,
                               tabIndex: void 0,
                               object: AssociationObjectProperty({
-                                "dataSourceId": "p.136",
+                                "dataSourceId": "p.138",
                                 "scope": "$BotConfig",
                                 "editable": true,
                                 "path": "ConversationalUI.ProviderConfig_DeployedModel/OpenAIConnector.OpenAIDeployedModel",
@@ -1695,7 +1695,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               style: void 0,
                               tabIndex: void 0,
                               object: AssociationObjectProperty({
-                                "dataSourceId": "p.145",
+                                "dataSourceId": "p.147",
                                 "scope": "$BotConfig",
                                 "editable": true,
                                 "path": "ConversationalUI.ProviderConfig_DeployedModel/MxGenAIConnector.MxCloudDeployedModel",
@@ -1856,6 +1856,324 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               ],
                               hideFooter: false,
                               footer: void 0
+                            }
+                          ),
+                          /* @__PURE__ */ React.createElement(
+                            $FormGroup,
+                            {
+                              key: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2$formGroup",
+                              $widgetId: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2$formGroup",
+                              class: "mx-name-comboBox2",
+                              style: void 0,
+                              control: [
+                                /* @__PURE__ */ React.createElement(
+                                  $Combobox,
+                                  {
+                                    key: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2",
+                                    $widgetId: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2",
+                                    source: "context",
+                                    optionsSourceType: "association",
+                                    optionsSourceDatabaseDataSource: void 0,
+                                    optionsSourceDatabaseCaptionType: "attribute",
+                                    optionsSourceDatabaseDefaultValue: void 0,
+                                    attributeAssociation: AssociationProperty({
+                                      "type": "Reference",
+                                      "entity": "MyFirstAIBot.BotConfig",
+                                      "path": "",
+                                      "attribute": "MyFirstAIBot.BotConfig_EmbeddingDeployedModel",
+                                      "endpointEntity": "GenAICommons.DeployedModel",
+                                      "selectableObjectsId": "p.8",
+                                      "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                      "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                    }),
+                                    optionsSourceAssociationDataSource: DatabaseObjectListProperty({
+                                      "dataSourceId": "p.8",
+                                      "entity": "GenAICommons.DeployedModel",
+                                      "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                      "operationId": "y2kQzmrp9F+lzbaxeZ4vIQ",
+                                      "sort": []
+                                    }),
+                                    optionsSourceAssociationCaptionType: "attribute",
+                                    optionsSourceAssociationCaptionAttribute: ListAttributeProperty({
+                                      "path": "",
+                                      "entity": "GenAICommons.DeployedModel",
+                                      "attribute": "DisplayName",
+                                      "attributeType": "String",
+                                      "sortable": true,
+                                      "filterable": true,
+                                      "dataSourceId": "p.8",
+                                      "isList": false
+                                    }),
+                                    optionsSourceAssociationCaptionExpression: void 0,
+                                    optionsSourceStaticDataSource: [],
+                                    emptyOptionText: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                      })
+                                    ]),
+                                    filterType: "contains",
+                                    noOptionsText: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                      })
+                                    ]),
+                                    clearable: true,
+                                    optionsSourceAssociationCustomContentType: "no",
+                                    optionsSourceAssociationCustomContent: void 0,
+                                    optionsSourceDatabaseCustomContentType: "no",
+                                    staticDataSourceCustomContentType: "no",
+                                    showFooter: false,
+                                    menuFooterContent: void 0,
+                                    selectionMethod: "checkbox",
+                                    selectedItemsStyle: "text",
+                                    selectAllButton: false,
+                                    selectAllButtonCaption: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Select all" }, "args": {} }
+                                      })
+                                    ]),
+                                    readOnlyStyle: "text",
+                                    onChangeEvent: void 0,
+                                    onEnterEvent: void 0,
+                                    onLeaveEvent: void 0,
+                                    ariaRequired: false,
+                                    clearButtonAriaLabel: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
+                                      })
+                                    ]),
+                                    removeValueAriaLabel: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Remove value" }, "args": {} }
+                                      })
+                                    ]),
+                                    a11ySelectedValue: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Selected value:" }, "args": {} }
+                                      })
+                                    ]),
+                                    a11yOptionsAvailable: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Number of options available:" }, "args": {} }
+                                      })
+                                    ]),
+                                    a11yInstructions: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Use up and down arrow keys to navigate. Press Enter or Space Bar keys to select." }, "args": {} }
+                                      })
+                                    ]),
+                                    lazyLoading: true,
+                                    loadingType: "spinner",
+                                    tabIndex: void 0,
+                                    id: DerivedUniqueIdProperty({
+                                      "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                                    })
+                                  }
+                                )
+                              ],
+                              caption: selectTranslation([
+                                ExpressionProperty({
+                                  "expression": { "expr": { "type": "literal", "value": "Embedding Model" }, "args": {} }
+                                })
+                              ]),
+                              labelFor: DerivedUniqueIdProperty({
+                                "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                              }),
+                              width: void 0,
+                              orientation: "vertical",
+                              hasError: ValidationProperty({
+                                "inputWidgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox2"
+                              })
+                            }
+                          ),
+                          /* @__PURE__ */ React.createElement(
+                            $FormGroup,
+                            {
+                              key: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1$formGroup",
+                              $widgetId: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1$formGroup",
+                              class: "mx-name-comboBox1",
+                              style: void 0,
+                              control: [
+                                /* @__PURE__ */ React.createElement(
+                                  $Combobox,
+                                  {
+                                    key: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1",
+                                    $widgetId: "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1",
+                                    source: "context",
+                                    optionsSourceType: "association",
+                                    optionsSourceDatabaseDataSource: void 0,
+                                    optionsSourceDatabaseCaptionType: "attribute",
+                                    optionsSourceDatabaseDefaultValue: void 0,
+                                    attributeAssociation: AssociationProperty({
+                                      "type": "Reference",
+                                      "entity": "MyFirstAIBot.BotConfig",
+                                      "path": "",
+                                      "attribute": "MyFirstAIBot.BotConfig_DatabaseConfiguration",
+                                      "endpointEntity": "PgVectorKnowledgeBase.DatabaseConfiguration",
+                                      "selectableObjectsId": "p.9",
+                                      "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                      "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                    }),
+                                    optionsSourceAssociationDataSource: DatabaseObjectListProperty({
+                                      "dataSourceId": "p.9",
+                                      "entity": "PgVectorKnowledgeBase.DatabaseConfiguration",
+                                      "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                      "operationId": "Oe43FVYJJ1CMeZjLg/fjGA",
+                                      "sort": []
+                                    }),
+                                    optionsSourceAssociationCaptionType: "attribute",
+                                    optionsSourceAssociationCaptionAttribute: ListAttributeProperty({
+                                      "path": "",
+                                      "entity": "PgVectorKnowledgeBase.DatabaseConfiguration",
+                                      "attribute": "DisplayName",
+                                      "attributeType": "String",
+                                      "sortable": true,
+                                      "filterable": true,
+                                      "dataSourceId": "p.9",
+                                      "isList": false
+                                    }),
+                                    optionsSourceAssociationCaptionExpression: void 0,
+                                    optionsSourceStaticDataSource: [],
+                                    emptyOptionText: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                      })
+                                    ]),
+                                    filterType: "contains",
+                                    noOptionsText: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                      })
+                                    ]),
+                                    clearable: true,
+                                    optionsSourceAssociationCustomContentType: "no",
+                                    optionsSourceAssociationCustomContent: void 0,
+                                    optionsSourceDatabaseCustomContentType: "no",
+                                    staticDataSourceCustomContentType: "no",
+                                    showFooter: false,
+                                    menuFooterContent: void 0,
+                                    selectionMethod: "checkbox",
+                                    selectedItemsStyle: "text",
+                                    selectAllButton: false,
+                                    selectAllButtonCaption: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Select all" }, "args": {} }
+                                      })
+                                    ]),
+                                    readOnlyStyle: "text",
+                                    onChangeEvent: void 0,
+                                    onEnterEvent: void 0,
+                                    onLeaveEvent: void 0,
+                                    ariaRequired: false,
+                                    clearButtonAriaLabel: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
+                                      })
+                                    ]),
+                                    removeValueAriaLabel: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Remove value" }, "args": {} }
+                                      })
+                                    ]),
+                                    a11ySelectedValue: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Selected value:" }, "args": {} }
+                                      })
+                                    ]),
+                                    a11yOptionsAvailable: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Number of options available:" }, "args": {} }
+                                      })
+                                    ]),
+                                    a11yInstructions: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "Use up and down arrow keys to navigate. Press Enter or Space Bar keys to select." }, "args": {} }
+                                      })
+                                    ]),
+                                    lazyLoading: true,
+                                    loadingType: "spinner",
+                                    tabIndex: void 0,
+                                    id: DerivedUniqueIdProperty({
+                                      "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                                    })
+                                  }
+                                )
+                              ],
+                              caption: selectTranslation([
+                                ExpressionProperty({
+                                  "expression": { "expr": { "type": "literal", "value": "DatabaseConfiguration" }, "args": {} }
+                                })
+                              ]),
+                              labelFor: DerivedUniqueIdProperty({
+                                "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                              }),
+                              width: void 0,
+                              orientation: "vertical",
+                              hasError: ValidationProperty({
+                                "inputWidgetId": "p.MyFirstAIBot.BotConfig_NewEdit.comboBox1"
+                              })
+                            }
+                          ),
+                          /* @__PURE__ */ React.createElement(
+                            $FormGroup,
+                            {
+                              key: "p.MyFirstAIBot.BotConfig_NewEdit.textBox1$formGroup",
+                              $widgetId: "p.MyFirstAIBot.BotConfig_NewEdit.textBox1$formGroup",
+                              class: "mx-name-textBox1 mx-textbox",
+                              style: void 0,
+                              control: [
+                                /* @__PURE__ */ React.createElement(
+                                  $TextBox,
+                                  {
+                                    key: "p.MyFirstAIBot.BotConfig_NewEdit.textBox1",
+                                    $widgetId: "p.MyFirstAIBot.BotConfig_NewEdit.textBox1",
+                                    inputValue: AttributeProperty({
+                                      "scope": "p.MyFirstAIBot.BotConfig_NewEdit.dataView1",
+                                      "path": "",
+                                      "entity": "MyFirstAIBot.BotConfig",
+                                      "attribute": "KnowledgeBaseName",
+                                      "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false },
+                                      "isList": false,
+                                      "validation": null,
+                                      "formatting": {}
+                                    }),
+                                    isPassword: false,
+                                    placeholder: selectTranslation([
+                                      ExpressionProperty({
+                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                      })
+                                    ]),
+                                    mask: "",
+                                    readOnlyStyle: "control",
+                                    maxLength: 200,
+                                    onEnter: void 0,
+                                    onLeave: void 0,
+                                    onEnterKeyPress: void 0,
+                                    ariaLabel: void 0,
+                                    autocomplete: "on",
+                                    submitWhileEditing: false,
+                                    submitDelay: 300,
+                                    ariaRequired: void 0,
+                                    tabIndex: void 0,
+                                    id: DerivedUniqueIdProperty({
+                                      "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                                    })
+                                  }
+                                )
+                              ],
+                              caption: selectTranslation([
+                                ExpressionProperty({
+                                  "expression": { "expr": { "type": "literal", "value": "Knowledge base name" }, "args": {} }
+                                })
+                              ]),
+                              labelFor: DerivedUniqueIdProperty({
+                                "widgetId": "p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                              }),
+                              width: void 0,
+                              orientation: "vertical",
+                              hasError: ValidationProperty({
+                                "inputWidgetId": "p.MyFirstAIBot.BotConfig_NewEdit.textBox1"
+                              })
                             }
                           )
                         ],

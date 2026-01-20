@@ -11,6 +11,7 @@
     "MyScheduledEvents": "GenAICommons.ScE_Trace_Cleanup,GenAICommons.ScE_Usage_Cleanup"
   },
   "Constants": {
+    "MyFirstAIBot.ChunkSizeCharacters": "500",
     "AgentCommons.LogNode": "AgentCommons",
     "AWSAuthentication.AccessKey": "",
     "AWSAuthentication.SecretAccessKey": "",

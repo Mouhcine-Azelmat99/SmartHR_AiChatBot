@@ -21,6 +21,12 @@
   },
   "Constants": [
     {
+      "Name": "MyFirstAIBot.ChunkSizeCharacters",
+      "Type": "Integer",
+      "Description": "",
+      "DefaultValue": "500"
+    },
+    {
       "Name": "AgentCommons.LogNode",
       "Type": "String",
       "Description": "",

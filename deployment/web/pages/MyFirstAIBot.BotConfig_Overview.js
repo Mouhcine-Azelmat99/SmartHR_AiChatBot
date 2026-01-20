@@ -25,12 +25,13 @@ import * as DatagridTextFilterWidgetModule from "C:/Users/MouhcineAZELMAT/Deskto
 const DatagridTextFilter = Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "DatagridTextFilter")?.value || Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "default")?.value;   
 import { DataView } from "mendix/widgets/web/DataView";
 import { Div } from "mendix/widgets/web/Div";
+import { TabContainer } from "mendix/widgets/web/TabContainer";
 import { Text } from "mendix/widgets/web/Text";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 
 import { content as parentContent } from "../layouts/Atlas_Core.Atlas_TopBar.js";
 
-const { $Div, $Container, $Text, $Datagrid, $DatagridTextFilter, $DatagridDropdownFilter, $ConditionalVisibilityWrapper, $ActionButton, $DataView } = asPluginWidgets({ Div, Container, Text, Datagrid, DatagridTextFilter, DatagridDropdownFilter, ConditionalVisibilityWrapper, ActionButton, DataView });
+const { $Div, $TabContainer, $Container, $Text, $Datagrid, $DatagridTextFilter, $DatagridDropdownFilter, $ConditionalVisibilityWrapper, $ActionButton, $DataView } = asPluginWidgets({ Div, TabContainer, Container, Text, Datagrid, DatagridTextFilter, DatagridDropdownFilter, ConditionalVisibilityWrapper, ActionButton, DataView });
 
 addEnumerations({
     "MyFirstAIBot.ENUM_ActionMicroflowSelection": [
@@ -50,773 +51,94 @@ addEnumerations({
 });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1"
-        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1"
-        class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
+    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid3"
+        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid3"
+        class={"mx-name-layoutGrid3 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0"
-                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0"
+            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid3$row0"
+                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid3$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column0"
-                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column0"
-                        class={"col-lg-8 col-md-12 col-12"}
-                        style={undefined}
-                        content={[
-                            <$Container key="p.MyFirstAIBot.BotConfig_Overview.container2"
-                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.container2"
-                                class={"mx-name-container2 card"}
-                                style={undefined}
-                                renderMode={"div"}
-                                onClick={undefined}
-                                content={[
-                                    <$Text key="p.MyFirstAIBot.BotConfig_Overview.text1"
-                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.text1"
-                                        class={"mx-name-text1"}
-                                        style={undefined}
-                                        caption={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Bot Configuration" }, "args": {} }
-                                            })
-                                        ])}
-                                        renderMode={"h2"} />,
-                                    <$Datagrid key="p.MyFirstAIBot.BotConfig_Overview.grid1"
-                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.grid1"
-                                        datasource={DatabaseObjectListProperty({
-                                            "dataSourceId": "p.0",
-                                            "entity": "MyFirstAIBot.BotConfig",
-                                            "operationId": "2l0Jn1/FNFeJPCkDfLuZeg",
-                                            "sort": [
-                                                [
-                                                    "IsDefault",
-                                                    "desc"
-                                                ],
-                                                [
-                                                    "DisplayName",
-                                                    "asc"
-                                                ]
-                                            ]
-                                        })}
-                                        refreshInterval={0}
-                                        itemSelection={SelectionProperty({
-                                            "selectionType": "Single",
-                                            "dataSourceId": "p.0"
-                                        })}
-                                        itemSelectionMethod={"rowClick"}
-                                        itemSelectionMode={"clear"}
-                                        showSelectAllToggle={true}
-                                        columns={[
-                                            {
-                                                "showContentAs": "attribute",
-                                                "attribute": ListAttributeProperty({
-                                                    "path": "",
-                                                    "entity": "MyFirstAIBot.BotConfig",
-                                                    "attribute": "DisplayName",
-                                                    "attributeType": "String",
-                                                    "sortable": true,
-                                                    "filterable": true,
-                                                    "dataSourceId": "p.0",
-                                                    "isList": false
-                                                }),
-                                                "content": undefined,
-                                                "dynamicText": t([
-                                                    undefined
-                                                ]),
-                                                "exportValue": t([
-                                                    undefined
-                                                ]),
-                                                "header": t([
-                                                    ExpressionProperty({
-                                                        "expression": { "expr": { "type": "literal", "value": "Display name" }, "args": {} }
-                                                    })
-                                                ]),
-                                                "tooltip": t([
-                                                    undefined
-                                                ]),
-                                                "filter": [
-                                                    <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter1"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter1"
-                                                        defaultValue={undefined}
-                                                        defaultFilter={"contains"}
-                                                        placeholder={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        adjustable={true}
-                                                        delay={500}
-                                                        onChange={undefined}
-                                                        screenReaderButtonCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        screenReaderInputCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        attrChoice={"auto"}
-                                                        linkedDs={undefined}
-                                                        attributes={[]}
-                                                        class={"mx-name-textFilter1"}
-                                                        style={undefined}
-                                                        tabIndex={undefined} />
-                                                ],
-                                                "visible": ExpressionProperty({
-                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
-                                                }),
-                                                "sortable": true,
-                                                "resizable": true,
-                                                "draggable": true,
-                                                "hidable": "yes",
-                                                "allowEventPropagation": true,
-                                                "width": "manual",
-                                                "minWidth": "auto",
-                                                "minWidthLimit": 100,
-                                                "size": 35,
-                                                "alignment": "left",
-                                                "wrapText": false
-                                            },
-                                            {
-                                                "showContentAs": "attribute",
-                                                "attribute": ListAttributeProperty({
-                                                    "path": "ConversationalUI.ProviderConfig_DeployedModel/GenAICommons.DeployedModel",
-                                                    "entity": "GenAICommons.DeployedModel",
-                                                    "attribute": "DisplayName",
-                                                    "attributeType": "String",
-                                                    "sortable": true,
-                                                    "filterable": true,
-                                                    "dataSourceId": "p.0",
-                                                    "isList": false
-                                                }),
-                                                "content": undefined,
-                                                "dynamicText": t([
-                                                    undefined
-                                                ]),
-                                                "exportValue": t([
-                                                    undefined
-                                                ]),
-                                                "header": t([
-                                                    ExpressionProperty({
-                                                        "expression": { "expr": { "type": "literal", "value": "Model" }, "args": {} }
-                                                    })
-                                                ]),
-                                                "tooltip": t([
-                                                    undefined
-                                                ]),
-                                                "filter": [
-                                                    <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter2"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter2"
-                                                        defaultValue={undefined}
-                                                        defaultFilter={"contains"}
-                                                        placeholder={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        adjustable={true}
-                                                        delay={500}
-                                                        onChange={undefined}
-                                                        screenReaderButtonCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        screenReaderInputCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        attrChoice={"auto"}
-                                                        linkedDs={undefined}
-                                                        attributes={[]}
-                                                        class={"mx-name-textFilter2"}
-                                                        style={undefined}
-                                                        tabIndex={undefined} />
-                                                ],
-                                                "visible": ExpressionProperty({
-                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
-                                                }),
-                                                "sortable": true,
-                                                "resizable": true,
-                                                "draggable": true,
-                                                "hidable": "yes",
-                                                "allowEventPropagation": true,
-                                                "width": "manual",
-                                                "minWidth": "auto",
-                                                "minWidthLimit": 100,
-                                                "size": 15,
-                                                "alignment": "left",
-                                                "wrapText": false
-                                            },
-                                            {
-                                                "showContentAs": "attribute",
-                                                "attribute": ListAttributeProperty({
-                                                    "path": "",
-                                                    "entity": "MyFirstAIBot.BotConfig",
-                                                    "attribute": "ActionMicroflowSelection",
-                                                    "attributeType": "Enum",
-                                                    "sortable": true,
-                                                    "filterable": true,
-                                                    "dataSourceId": "p.0",
-                                                    "isList": false
-                                                }),
-                                                "content": undefined,
-                                                "dynamicText": t([
-                                                    undefined
-                                                ]),
-                                                "exportValue": t([
-                                                    undefined
-                                                ]),
-                                                "header": t([
-                                                    ExpressionProperty({
-                                                        "expression": { "expr": { "type": "literal", "value": "Action microflow" }, "args": {} }
-                                                    })
-                                                ]),
-                                                "tooltip": t([
-                                                    undefined
-                                                ]),
-                                                "filter": [
-                                                    <$DatagridDropdownFilter key="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter1"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter1"
-                                                        auto={true}
-                                                        defaultValue={undefined}
-                                                        filterOptions={[]}
-                                                        emptyOptionCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        multiSelect={false}
-                                                        onChange={undefined}
-                                                        ariaLabel={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        baseType={"attr"}
-                                                        linkedDs={undefined}
-                                                        attrChoice={"auto"}
-                                                        refOptions={undefined}
-                                                        refCaptionSource={"attr"}
-                                                        fetchOptionsLazy={false}
-                                                        filterable={false}
-                                                        clearable={true}
-                                                        selectedItemsStyle={"text"}
-                                                        selectionMethod={"checkbox"}
-                                                        emptySelectionCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Select" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        filterInputPlaceholderCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        class={"mx-name-drop_downFilter1"}
-                                                        style={undefined}
-                                                        tabIndex={undefined} />
-                                                ],
-                                                "visible": ExpressionProperty({
-                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
-                                                }),
-                                                "sortable": true,
-                                                "resizable": true,
-                                                "draggable": true,
-                                                "hidable": "yes",
-                                                "allowEventPropagation": true,
-                                                "width": "manual",
-                                                "minWidth": "auto",
-                                                "minWidthLimit": 100,
-                                                "size": 30,
-                                                "alignment": "left",
-                                                "wrapText": false
-                                            },
-                                            {
-                                                "showContentAs": "attribute",
-                                                "attribute": ListAttributeProperty({
-                                                    "path": "",
-                                                    "entity": "MyFirstAIBot.BotConfig",
-                                                    "attribute": "IsSelectable",
-                                                    "attributeType": "Boolean",
-                                                    "sortable": true,
-                                                    "filterable": true,
-                                                    "dataSourceId": "p.0",
-                                                    "isList": false
-                                                }),
-                                                "content": undefined,
-                                                "dynamicText": t([
-                                                    undefined
-                                                ]),
-                                                "exportValue": t([
-                                                    undefined
-                                                ]),
-                                                "header": t([
-                                                    ExpressionProperty({
-                                                        "expression": { "expr": { "type": "literal", "value": "Is selectable" }, "args": {} }
-                                                    })
-                                                ]),
-                                                "tooltip": t([
-                                                    undefined
-                                                ]),
-                                                "filter": [
-                                                    <$DatagridDropdownFilter key="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter2"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter2"
-                                                        auto={true}
-                                                        defaultValue={undefined}
-                                                        filterOptions={[]}
-                                                        emptyOptionCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        multiSelect={false}
-                                                        onChange={undefined}
-                                                        ariaLabel={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        baseType={"attr"}
-                                                        linkedDs={undefined}
-                                                        attrChoice={"auto"}
-                                                        refOptions={undefined}
-                                                        refCaptionSource={"attr"}
-                                                        fetchOptionsLazy={false}
-                                                        filterable={false}
-                                                        clearable={true}
-                                                        selectedItemsStyle={"text"}
-                                                        selectionMethod={"checkbox"}
-                                                        emptySelectionCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Select" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        filterInputPlaceholderCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        class={"mx-name-drop_downFilter2"}
-                                                        style={undefined}
-                                                        tabIndex={undefined} />
-                                                ],
-                                                "visible": ExpressionProperty({
-                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
-                                                }),
-                                                "sortable": true,
-                                                "resizable": true,
-                                                "draggable": true,
-                                                "hidable": "yes",
-                                                "allowEventPropagation": true,
-                                                "width": "manual",
-                                                "minWidth": "auto",
-                                                "minWidthLimit": 100,
-                                                "size": 10,
-                                                "alignment": "left",
-                                                "wrapText": false
-                                            },
-                                            {
-                                                "showContentAs": "attribute",
-                                                "attribute": ListAttributeProperty({
-                                                    "path": "",
-                                                    "entity": "MyFirstAIBot.BotConfig",
-                                                    "attribute": "IsDefault",
-                                                    "attributeType": "Boolean",
-                                                    "sortable": true,
-                                                    "filterable": true,
-                                                    "dataSourceId": "p.0",
-                                                    "isList": false
-                                                }),
-                                                "content": undefined,
-                                                "dynamicText": t([
-                                                    undefined
-                                                ]),
-                                                "exportValue": t([
-                                                    undefined
-                                                ]),
-                                                "header": t([
-                                                    ExpressionProperty({
-                                                        "expression": { "expr": { "type": "literal", "value": "Is default" }, "args": {} }
-                                                    })
-                                                ]),
-                                                "tooltip": t([
-                                                    undefined
-                                                ]),
-                                                "filter": [
-                                                    <$DatagridDropdownFilter key="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter3"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter3"
-                                                        auto={true}
-                                                        defaultValue={undefined}
-                                                        filterOptions={[]}
-                                                        emptyOptionCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        multiSelect={false}
-                                                        onChange={undefined}
-                                                        ariaLabel={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        baseType={"attr"}
-                                                        linkedDs={undefined}
-                                                        attrChoice={"auto"}
-                                                        refOptions={undefined}
-                                                        refCaptionSource={"attr"}
-                                                        fetchOptionsLazy={false}
-                                                        filterable={false}
-                                                        clearable={true}
-                                                        selectedItemsStyle={"text"}
-                                                        selectionMethod={"checkbox"}
-                                                        emptySelectionCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Select" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        filterInputPlaceholderCaption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        class={"mx-name-drop_downFilter3"}
-                                                        style={undefined}
-                                                        tabIndex={undefined} />
-                                                ],
-                                                "visible": ExpressionProperty({
-                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
-                                                }),
-                                                "sortable": true,
-                                                "resizable": true,
-                                                "draggable": true,
-                                                "hidable": "yes",
-                                                "allowEventPropagation": true,
-                                                "width": "manual",
-                                                "minWidth": "auto",
-                                                "minWidthLimit": 100,
-                                                "size": 10,
-                                                "alignment": "left",
-                                                "wrapText": false
-                                            }
-                                        ]}
-                                        columnsFilterable={true}
-                                        pageSize={20}
-                                        pagination={"buttons"}
-                                        pagingPosition={"bottom"}
-                                        showPagingButtons={"always"}
-                                        loadMoreButtonCaption={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Load More" }, "args": {} }
-                                            })
-                                        ])}
-                                        showEmptyPlaceholder={"none"}
-                                        emptyPlaceholder={undefined}
-                                        rowClass={undefined}
-                                        onClickTrigger={"double"}
-                                        onClick={ListActionProperty({
-                                            "action": { "type": "openPage", "argMap": { "param$BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "object" } }, "config": { "name": "MyFirstAIBot/BotConfig_NewEdit.page.xml", "title": t([ { "type": "literal", "value": "Edit Bot Configuration" } ]), "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": false },
-                                            "abortOnServerValidation": false,
-                                            "dataSourceId": "p.0",
-                                            "argumentTypes": { }
-                                        })}
-                                        onSelectionChange={undefined}
-                                        columnsSortable={true}
-                                        columnsResizable={true}
-                                        columnsDraggable={true}
-                                        columnsHidable={true}
-                                        configurationStorageType={"attribute"}
-                                        filtersPlaceholder={[
-                                            <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton2$visibility"
-                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton2$visibility"
-                                                visible={ExpressionProperty({
-                                                    "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
-                                                })}
-                                                contents={[
-                                                    <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton2"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton2"
-                                                        buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton2"}
-                                                        class={"mx-name-actionButton2 spacing-outer-bottom spacing-outer-right"}
-                                                        style={undefined}
-                                                        tabIndex={undefined}
-                                                        renderType={"button"}
-                                                        role={undefined}
-                                                        buttonClass={"btn-default"}
-                                                        caption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "New" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        tooltip={TextProperty({
-                                                            "value": t([
-                                                                ""
-                                                            ])
-                                                        })}
-                                                        icon={undefined}
-                                                        action={ActionProperty({
-                                                            "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "hMIsa0m24FmgiLdGtTR4cw", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
-                                                            "abortOnServerValidation": true
-                                                        })} />
-                                                ]} />,
-                                            <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton1$visibility"
-                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton1$visibility"
-                                                visible={ExpressionProperty({
-                                                    "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
-                                                })}
-                                                contents={[
-                                                    <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton1"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton1"
-                                                        buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton1"}
-                                                        class={"mx-name-actionButton1 spacing-outer-bottom spacing-outer-right"}
-                                                        style={undefined}
-                                                        tabIndex={undefined}
-                                                        renderType={"button"}
-                                                        role={undefined}
-                                                        buttonClass={"btn-default"}
-                                                        caption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Edit" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        tooltip={TextProperty({
-                                                            "value": t([
-                                                                ""
-                                                            ])
-                                                        })}
-                                                        icon={undefined}
-                                                        action={ActionProperty({
-                                                            "action": { "type": "openPage", "argMap": { "param$BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "name": "MyFirstAIBot/BotConfig_NewEdit.page.xml", "title": t([ { "type": "literal", "value": "Edit Bot Configuration" } ]), "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
-                                                            "abortOnServerValidation": true
-                                                        })} />
-                                                ]} />,
-                                            <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton3$visibility"
-                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton3$visibility"
-                                                visible={ExpressionProperty({
-                                                    "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
-                                                })}
-                                                contents={[
-                                                    <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton3"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton3"
-                                                        buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton3"}
-                                                        class={"mx-name-actionButton3 spacing-outer-bottom spacing-outer-right"}
-                                                        style={undefined}
-                                                        tabIndex={undefined}
-                                                        renderType={"button"}
-                                                        role={undefined}
-                                                        buttonClass={"btn-default"}
-                                                        caption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Delete" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        tooltip={TextProperty({
-                                                            "value": t([
-                                                                ""
-                                                            ])
-                                                        })}
-                                                        icon={undefined}
-                                                        action={ActionProperty({
-                                                            "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "oD6+FjFxQVS/mdN1QlBzlw", "validate": "view", "confirmation": { "question": t([ "Are you sure?" ]), "proceed": t([ "Proceed" ]), "cancel": t([ "Cancel" ]) }, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
-                                                            "abortOnServerValidation": true
-                                                        })} />
-                                                ]} />,
-                                            <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton6$visibility"
-                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton6$visibility"
-                                                visible={ExpressionProperty({
-                                                    "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
-                                                })}
-                                                contents={[
-                                                    <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton6"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton6"
-                                                        buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton6"}
-                                                        class={"mx-name-actionButton6 spacing-outer-bottom spacing-outer-right"}
-                                                        style={undefined}
-                                                        tabIndex={undefined}
-                                                        renderType={"button"}
-                                                        role={undefined}
-                                                        buttonClass={"btn-default"}
-                                                        caption={t([
-                                                            ExpressionProperty({
-                                                                "expression": { "expr": { "type": "literal", "value": "Make Default" }, "args": {} }
-                                                            })
-                                                        ])}
-                                                        tooltip={TextProperty({
-                                                            "value": t([
-                                                                ""
-                                                            ])
-                                                        })}
-                                                        icon={undefined}
-                                                        action={ActionProperty({
-                                                            "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "CatTFycT2FKNSlpYoUUXwg", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
-                                                            "abortOnServerValidation": true
-                                                        })} />
-                                                ]} />
-                                        ]}
-                                        filterSectionTitle={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                            })
-                                        ])}
-                                        exportDialogLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Export progress" }, "args": {} }
-                                            })
-                                        ])}
-                                        cancelExportLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Cancel data export" }, "args": {} }
-                                            })
-                                        ])}
-                                        selectRowLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Select row" }, "args": {} }
-                                            })
-                                        ])}
-                                        loadingType={"spinner"}
-                                        showNumberOfRows={false}
-                                        storeFiltersInPersonalization={true}
-                                        selectAllRowsLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Select all rows" }, "args": {} }
-                                            })
-                                        ])}
-                                        enableSelectAll={false}
-                                        keepSelection={false}
-                                        selectionCounterPosition={"bottom"}
-                                        refreshIndicator={false}
-                                        selectingAllLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Selecting all items..." }, "args": {} }
-                                            })
-                                        ])}
-                                        cancelSelectionLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Cancel selection" }, "args": {} }
-                                            })
-                                        ])}
-                                        selectedCountTemplateSingular={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "%d row selected" }, "args": {} }
-                                            })
-                                        ])}
-                                        selectedCountTemplatePlural={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "%d rows selected" }, "args": {} }
-                                            })
-                                        ])}
-                                        selectAllText={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Select all rows in the data source" }, "args": {} }
-                                            })
-                                        ])}
-                                        selectAllTemplate={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Select all %d rows in the data source" }, "args": {} }
-                                            })
-                                        ])}
-                                        allSelectedText={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "All %d rows selected." }, "args": {} }
-                                            })
-                                        ])}
-                                        clearSelectionButtonLabel={t([
-                                            ExpressionProperty({
-                                                "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
-                                            })
-                                        ])}
-                                        class={"mx-name-grid1"}
-                                        style={undefined}
-                                        tabIndex={undefined} />
-                                ]}
-                                ariaHidden={false} />
-                        ]} />,
-                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column1"
-                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column1"
+                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid3$row0$column0"
+                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid3$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$DataView key="p.MyFirstAIBot.BotConfig_Overview.dataView1"
-                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.dataView1"
-                                class={"mx-name-dataView1 form-horizontal"}
+                            <$TabContainer key="p.MyFirstAIBot.BotConfig_Overview.tabContainer1"
+                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.tabContainer1"
+                                class={"mx-name-tabContainer1"}
                                 style={undefined}
                                 tabIndex={undefined}
-                                object={ListenObjectProperty({
-                                    "dataSourceId": "p.46",
-                                    "editable": true,
-                                    "listenTo": "p.MyFirstAIBot.BotConfig_Overview.grid1",
-                                    "operationId": "oQolVUDP2V2hRoqbqf+BZg"
-                                })}
-                                emptyMessage={TextProperty({
-                                    "value": t([
-                                        ""
-                                    ])
-                                })}
-                                body={[
-                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.container1$visibility"
-                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.container1$visibility"
-                                        visible={ExpressionProperty({
-                                            "expression": { "expr": { "type": "function", "name": "=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "ActionMicroflowSelection" }, { "type": "literal", "value": "ChatContext_ChatWithHistory_ActionMicroflow" } ] }, "args": { "currentObject": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataView1", "source": "object" } } }
-                                        })}
-                                        contents={[
-                                            <$Container key="p.MyFirstAIBot.BotConfig_Overview.container1"
-                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.container1"
-                                                class={"mx-name-container1 card"}
+                                widgetId={"p.MyFirstAIBot.BotConfig_Overview.tabContainer1"}
+                                defaultTab={0}
+                                tabs={[
+                                    {
+                                        "name": "tabPage1",
+                                        "caption": TextProperty({
+                                            "value": t([
+                                                "ChatBot Config"
+                                            ])
+                                        }),
+                                        "isDelayed": false,
+                                        "refreshOnShow": false,
+                                        "content": [
+                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1"
+                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1"
+                                                class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid"}
                                                 style={undefined}
-                                                renderMode={"div"}
-                                                onClick={undefined}
                                                 content={[
-                                                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2"
-                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2"
-                                                        class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid"}
+                                                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0"
+                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0"
+                                                        class={"row"}
                                                         style={undefined}
                                                         content={[
-                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0"
-                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0"
-                                                                class={"row"}
+                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column0"
+                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column0"
+                                                                class={"col-lg-8 col-md-12 col-12"}
                                                                 style={undefined}
                                                                 content={[
-                                                                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0$column0"
-                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0$column0"
-                                                                        class={"col-lg col-md col"}
+                                                                    <$Container key="p.MyFirstAIBot.BotConfig_Overview.container2"
+                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.container2"
+                                                                        class={"mx-name-container2 card"}
                                                                         style={undefined}
+                                                                        renderMode={"div"}
+                                                                        onClick={undefined}
                                                                         content={[
-                                                                            <$Text key="p.MyFirstAIBot.BotConfig_Overview.text2"
-                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.text2"
-                                                                                class={"mx-name-text2 spacing-outer-bottom-medium"}
+                                                                            <$Text key="p.MyFirstAIBot.BotConfig_Overview.text1"
+                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.text1"
+                                                                                class={"mx-name-text1"}
                                                                                 style={undefined}
                                                                                 caption={t([
                                                                                     ExpressionProperty({
-                                                                                        "expression": { "expr": { "type": "literal", "value": "Knowledge Base Retrievals (available in the chat)" }, "args": {} }
+                                                                                        "expression": { "expr": { "type": "literal", "value": "Bot Configuration" }, "args": {} }
                                                                                     })
                                                                                 ])}
-                                                                                renderMode={"h4"} />
-                                                                        ]} />
-                                                                ]} />,
-                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1"
-                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1"
-                                                                class={"row"}
-                                                                style={undefined}
-                                                                content={[
-                                                                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1$column0"
-                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1$column0"
-                                                                        class={"col-lg col-md col"}
-                                                                        style={undefined}
-                                                                        content={[
-                                                                            <$Datagrid key="p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1"
-                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1"
-                                                                                datasource={AssociationObjectListProperty({
-                                                                                    "dataSourceId": "p.9",
-                                                                                    "entity": "MyFirstAIBot.DeployedKBRetrieval",
-                                                                                    "scope": "p.MyFirstAIBot.BotConfig_Overview.dataView1",
-                                                                                    "operationId": "2cnQ3yLNGlSR8ROE8LiztQ"
+                                                                                renderMode={"h2"} />,
+                                                                            <$Datagrid key="p.MyFirstAIBot.BotConfig_Overview.grid1"
+                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.grid1"
+                                                                                datasource={DatabaseObjectListProperty({
+                                                                                    "dataSourceId": "p.4",
+                                                                                    "entity": "MyFirstAIBot.BotConfig",
+                                                                                    "operationId": "bzqMp/4CK1WviPGRno0bAg",
+                                                                                    "sort": [
+                                                                                        [
+                                                                                            "IsDefault",
+                                                                                            "desc"
+                                                                                        ],
+                                                                                        [
+                                                                                            "DisplayName",
+                                                                                            "asc"
+                                                                                        ]
+                                                                                    ]
                                                                                 })}
                                                                                 refreshInterval={0}
-                                                                                itemSelectionMethod={"checkbox"}
+                                                                                itemSelection={SelectionProperty({
+                                                                                    "selectionType": "Single",
+                                                                                    "dataSourceId": "p.4"
+                                                                                })}
+                                                                                itemSelectionMethod={"rowClick"}
                                                                                 itemSelectionMode={"clear"}
                                                                                 showSelectAllToggle={true}
                                                                                 columns={[
@@ -824,12 +146,12 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         "showContentAs": "attribute",
                                                                                         "attribute": ListAttributeProperty({
                                                                                             "path": "",
-                                                                                            "entity": "MyFirstAIBot.DeployedKBRetrieval",
-                                                                                            "attribute": "Name",
+                                                                                            "entity": "MyFirstAIBot.BotConfig",
+                                                                                            "attribute": "DisplayName",
                                                                                             "attributeType": "String",
                                                                                             "sortable": true,
                                                                                             "filterable": true,
-                                                                                            "dataSourceId": "p.9",
+                                                                                            "dataSourceId": "p.4",
                                                                                             "isList": false
                                                                                         }),
                                                                                         "content": undefined,
@@ -841,15 +163,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         ]),
                                                                                         "header": t([
                                                                                             ExpressionProperty({
-                                                                                                "expression": { "expr": { "type": "literal", "value": "Name" }, "args": {} }
+                                                                                                "expression": { "expr": { "type": "literal", "value": "Display name" }, "args": {} }
                                                                                             })
                                                                                         ]),
                                                                                         "tooltip": t([
                                                                                             undefined
                                                                                         ]),
                                                                                         "filter": [
-                                                                                            <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter3"
-                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter3"
+                                                                                            <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter1"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter1"
                                                                                                 defaultValue={undefined}
                                                                                                 defaultFilter={"contains"}
                                                                                                 placeholder={t([
@@ -873,7 +195,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                                 attrChoice={"auto"}
                                                                                                 linkedDs={undefined}
                                                                                                 attributes={[]}
-                                                                                                class={"mx-name-textFilter3"}
+                                                                                                class={"mx-name-textFilter1"}
                                                                                                 style={undefined}
                                                                                                 tabIndex={undefined} />
                                                                                         ],
@@ -888,7 +210,79 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         "width": "manual",
                                                                                         "minWidth": "auto",
                                                                                         "minWidthLimit": 100,
-                                                                                        "size": 4,
+                                                                                        "size": 35,
+                                                                                        "alignment": "left",
+                                                                                        "wrapText": false
+                                                                                    },
+                                                                                    {
+                                                                                        "showContentAs": "attribute",
+                                                                                        "attribute": ListAttributeProperty({
+                                                                                            "path": "ConversationalUI.ProviderConfig_DeployedModel/GenAICommons.DeployedModel",
+                                                                                            "entity": "GenAICommons.DeployedModel",
+                                                                                            "attribute": "DisplayName",
+                                                                                            "attributeType": "String",
+                                                                                            "sortable": true,
+                                                                                            "filterable": true,
+                                                                                            "dataSourceId": "p.4",
+                                                                                            "isList": false
+                                                                                        }),
+                                                                                        "content": undefined,
+                                                                                        "dynamicText": t([
+                                                                                            undefined
+                                                                                        ]),
+                                                                                        "exportValue": t([
+                                                                                            undefined
+                                                                                        ]),
+                                                                                        "header": t([
+                                                                                            ExpressionProperty({
+                                                                                                "expression": { "expr": { "type": "literal", "value": "Model" }, "args": {} }
+                                                                                            })
+                                                                                        ]),
+                                                                                        "tooltip": t([
+                                                                                            undefined
+                                                                                        ]),
+                                                                                        "filter": [
+                                                                                            <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter2"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter2"
+                                                                                                defaultValue={undefined}
+                                                                                                defaultFilter={"contains"}
+                                                                                                placeholder={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                adjustable={true}
+                                                                                                delay={500}
+                                                                                                onChange={undefined}
+                                                                                                screenReaderButtonCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                screenReaderInputCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                attrChoice={"auto"}
+                                                                                                linkedDs={undefined}
+                                                                                                attributes={[]}
+                                                                                                class={"mx-name-textFilter2"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined} />
+                                                                                        ],
+                                                                                        "visible": ExpressionProperty({
+                                                                                            "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                                                        }),
+                                                                                        "sortable": true,
+                                                                                        "resizable": true,
+                                                                                        "draggable": true,
+                                                                                        "hidable": "yes",
+                                                                                        "allowEventPropagation": true,
+                                                                                        "width": "manual",
+                                                                                        "minWidth": "auto",
+                                                                                        "minWidthLimit": 100,
+                                                                                        "size": 15,
                                                                                         "alignment": "left",
                                                                                         "wrapText": false
                                                                                     },
@@ -896,12 +290,12 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         "showContentAs": "attribute",
                                                                                         "attribute": ListAttributeProperty({
                                                                                             "path": "",
-                                                                                            "entity": "MyFirstAIBot.DeployedKBRetrieval",
-                                                                                            "attribute": "Description",
-                                                                                            "attributeType": "String",
+                                                                                            "entity": "MyFirstAIBot.BotConfig",
+                                                                                            "attribute": "ActionMicroflowSelection",
+                                                                                            "attributeType": "Enum",
                                                                                             "sortable": true,
                                                                                             "filterable": true,
-                                                                                            "dataSourceId": "p.9",
+                                                                                            "dataSourceId": "p.4",
                                                                                             "isList": false
                                                                                         }),
                                                                                         "content": undefined,
@@ -913,39 +307,51 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         ]),
                                                                                         "header": t([
                                                                                             ExpressionProperty({
-                                                                                                "expression": { "expr": { "type": "literal", "value": "Description" }, "args": {} }
+                                                                                                "expression": { "expr": { "type": "literal", "value": "Action microflow" }, "args": {} }
                                                                                             })
                                                                                         ]),
                                                                                         "tooltip": t([
                                                                                             undefined
                                                                                         ]),
                                                                                         "filter": [
-                                                                                            <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter4"
-                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter4"
+                                                                                            <$DatagridDropdownFilter key="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter1"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter1"
+                                                                                                auto={true}
                                                                                                 defaultValue={undefined}
-                                                                                                defaultFilter={"contains"}
-                                                                                                placeholder={t([
+                                                                                                filterOptions={[]}
+                                                                                                emptyOptionCaption={t([
                                                                                                     ExpressionProperty({
                                                                                                         "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
                                                                                                     })
                                                                                                 ])}
-                                                                                                adjustable={true}
-                                                                                                delay={500}
+                                                                                                multiSelect={false}
                                                                                                 onChange={undefined}
-                                                                                                screenReaderButtonCaption={t([
+                                                                                                ariaLabel={t([
                                                                                                     ExpressionProperty({
                                                                                                         "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
                                                                                                     })
                                                                                                 ])}
-                                                                                                screenReaderInputCaption={t([
-                                                                                                    ExpressionProperty({
-                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                                                                    })
-                                                                                                ])}
-                                                                                                attrChoice={"auto"}
+                                                                                                baseType={"attr"}
                                                                                                 linkedDs={undefined}
-                                                                                                attributes={[]}
-                                                                                                class={"mx-name-textFilter4"}
+                                                                                                attrChoice={"auto"}
+                                                                                                refOptions={undefined}
+                                                                                                refCaptionSource={"attr"}
+                                                                                                fetchOptionsLazy={false}
+                                                                                                filterable={false}
+                                                                                                clearable={true}
+                                                                                                selectedItemsStyle={"text"}
+                                                                                                selectionMethod={"checkbox"}
+                                                                                                emptySelectionCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Select" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                filterInputPlaceholderCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                class={"mx-name-drop_downFilter1"}
                                                                                                 style={undefined}
                                                                                                 tabIndex={undefined} />
                                                                                         ],
@@ -960,94 +366,23 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         "width": "manual",
                                                                                         "minWidth": "auto",
                                                                                         "minWidthLimit": 100,
-                                                                                        "size": 6,
+                                                                                        "size": 30,
                                                                                         "alignment": "left",
                                                                                         "wrapText": false
                                                                                     },
                                                                                     {
-                                                                                        "showContentAs": "customContent",
+                                                                                        "showContentAs": "attribute",
                                                                                         "attribute": ListAttributeProperty({
                                                                                             "path": "",
-                                                                                            "entity": "MyFirstAIBot.DeployedKBRetrieval",
-                                                                                            "attribute": "Name",
-                                                                                            "attributeType": "String",
+                                                                                            "entity": "MyFirstAIBot.BotConfig",
+                                                                                            "attribute": "IsSelectable",
+                                                                                            "attributeType": "Boolean",
                                                                                             "sortable": true,
                                                                                             "filterable": true,
-                                                                                            "dataSourceId": "p.9",
+                                                                                            "dataSourceId": "p.4",
                                                                                             "isList": false
                                                                                         }),
-                                                                                        "content": TemplatedWidgetProperty({
-                                                                                            "dataSourceId": "p.9",
-                                                                                            "editable": false,
-                                                                                            "children": () => [
-                                                                                                <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton8$visibility"
-                                                                                                    $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton8$visibility"
-                                                                                                    visible={ExpressionProperty({
-                                                                                                        "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
-                                                                                                    })}
-                                                                                                    contents={[
-                                                                                                        <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton8"
-                                                                                                            $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton8"
-                                                                                                            buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton8"}
-                                                                                                            class={"mx-name-actionButton8 btn-lg"}
-                                                                                                            style={undefined}
-                                                                                                            tabIndex={undefined}
-                                                                                                            renderType={"link"}
-                                                                                                            role={"button"}
-                                                                                                            buttonClass={"btn-primary"}
-                                                                                                            caption={t([
-                                                                                                                ExpressionProperty({
-                                                                                                                    "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                                                                                })
-                                                                                                            ])}
-                                                                                                            tooltip={TextProperty({
-                                                                                                                "value": t([
-                                                                                                                    ""
-                                                                                                                ])
-                                                                                                            })}
-                                                                                                            icon={WebIconProperty({
-                                                                                                                "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-pencil" }
-                                                                                                            })}
-                                                                                                            action={ActionProperty({
-                                                                                                                "action": { "type": "openPage", "argMap": { "param$DeployedKBRetrieval": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstAIBot/DeployedKBRetrieval_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
-                                                                                                                "abortOnServerValidation": true
-                                                                                                            })} />
-                                                                                                    ]} />,
-                                                                                                <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton9$visibility"
-                                                                                                    $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton9$visibility"
-                                                                                                    visible={ExpressionProperty({
-                                                                                                        "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
-                                                                                                    })}
-                                                                                                    contents={[
-                                                                                                        <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton9"
-                                                                                                            $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton9"
-                                                                                                            buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton9"}
-                                                                                                            class={"mx-name-actionButton9 btn-lg"}
-                                                                                                            style={undefined}
-                                                                                                            tabIndex={undefined}
-                                                                                                            renderType={"link"}
-                                                                                                            role={"button"}
-                                                                                                            buttonClass={"btn-primary"}
-                                                                                                            caption={t([
-                                                                                                                ExpressionProperty({
-                                                                                                                    "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                                                                                })
-                                                                                                            ])}
-                                                                                                            tooltip={TextProperty({
-                                                                                                                "value": t([
-                                                                                                                    ""
-                                                                                                                ])
-                                                                                                            })}
-                                                                                                            icon={WebIconProperty({
-                                                                                                                "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-trash-can" }
-                                                                                                            })}
-                                                                                                            action={ActionProperty({
-                                                                                                                "action": { "type": "callMicroflow", "argMap": { "DeployedKBRetrieval": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1", "source": "object" } }, "config": { "operationId": "5mKCO5xcR1GFrJCXjczTXA", "validate": "view", "confirmation": { "question": t([ "Are you sure?" ]), "proceed": t([ "Proceed" ]), "cancel": t([ "Cancel" ]) }, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
-                                                                                                                "abortOnServerValidation": true
-                                                                                                            })} />
-                                                                                                    ]} />
-                                                                                            ]
-                                                                                        }),
+                                                                                        "content": undefined,
                                                                                         "dynamicText": t([
                                                                                             undefined
                                                                                         ]),
@@ -1056,25 +391,150 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         ]),
                                                                                         "header": t([
                                                                                             ExpressionProperty({
-                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                "expression": { "expr": { "type": "literal", "value": "Is selectable" }, "args": {} }
                                                                                             })
                                                                                         ]),
                                                                                         "tooltip": t([
                                                                                             undefined
                                                                                         ]),
-                                                                                        "filter": undefined,
+                                                                                        "filter": [
+                                                                                            <$DatagridDropdownFilter key="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter2"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter2"
+                                                                                                auto={true}
+                                                                                                defaultValue={undefined}
+                                                                                                filterOptions={[]}
+                                                                                                emptyOptionCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                multiSelect={false}
+                                                                                                onChange={undefined}
+                                                                                                ariaLabel={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                baseType={"attr"}
+                                                                                                linkedDs={undefined}
+                                                                                                attrChoice={"auto"}
+                                                                                                refOptions={undefined}
+                                                                                                refCaptionSource={"attr"}
+                                                                                                fetchOptionsLazy={false}
+                                                                                                filterable={false}
+                                                                                                clearable={true}
+                                                                                                selectedItemsStyle={"text"}
+                                                                                                selectionMethod={"checkbox"}
+                                                                                                emptySelectionCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Select" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                filterInputPlaceholderCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                class={"mx-name-drop_downFilter2"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined} />
+                                                                                        ],
                                                                                         "visible": ExpressionProperty({
                                                                                             "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
                                                                                         }),
-                                                                                        "sortable": false,
+                                                                                        "sortable": true,
                                                                                         "resizable": true,
                                                                                         "draggable": true,
                                                                                         "hidable": "yes",
                                                                                         "allowEventPropagation": true,
-                                                                                        "width": "autoFit",
+                                                                                        "width": "manual",
                                                                                         "minWidth": "auto",
                                                                                         "minWidthLimit": 100,
-                                                                                        "size": 1,
+                                                                                        "size": 10,
+                                                                                        "alignment": "left",
+                                                                                        "wrapText": false
+                                                                                    },
+                                                                                    {
+                                                                                        "showContentAs": "attribute",
+                                                                                        "attribute": ListAttributeProperty({
+                                                                                            "path": "",
+                                                                                            "entity": "MyFirstAIBot.BotConfig",
+                                                                                            "attribute": "IsDefault",
+                                                                                            "attributeType": "Boolean",
+                                                                                            "sortable": true,
+                                                                                            "filterable": true,
+                                                                                            "dataSourceId": "p.4",
+                                                                                            "isList": false
+                                                                                        }),
+                                                                                        "content": undefined,
+                                                                                        "dynamicText": t([
+                                                                                            undefined
+                                                                                        ]),
+                                                                                        "exportValue": t([
+                                                                                            undefined
+                                                                                        ]),
+                                                                                        "header": t([
+                                                                                            ExpressionProperty({
+                                                                                                "expression": { "expr": { "type": "literal", "value": "Is default" }, "args": {} }
+                                                                                            })
+                                                                                        ]),
+                                                                                        "tooltip": t([
+                                                                                            undefined
+                                                                                        ]),
+                                                                                        "filter": [
+                                                                                            <$DatagridDropdownFilter key="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter3"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.drop_downFilter3"
+                                                                                                auto={true}
+                                                                                                defaultValue={undefined}
+                                                                                                filterOptions={[]}
+                                                                                                emptyOptionCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                multiSelect={false}
+                                                                                                onChange={undefined}
+                                                                                                ariaLabel={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                baseType={"attr"}
+                                                                                                linkedDs={undefined}
+                                                                                                attrChoice={"auto"}
+                                                                                                refOptions={undefined}
+                                                                                                refCaptionSource={"attr"}
+                                                                                                fetchOptionsLazy={false}
+                                                                                                filterable={false}
+                                                                                                clearable={true}
+                                                                                                selectedItemsStyle={"text"}
+                                                                                                selectionMethod={"checkbox"}
+                                                                                                emptySelectionCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Select" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                filterInputPlaceholderCaption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                class={"mx-name-drop_downFilter3"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined} />
+                                                                                        ],
+                                                                                        "visible": ExpressionProperty({
+                                                                                            "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                                                        }),
+                                                                                        "sortable": true,
+                                                                                        "resizable": true,
+                                                                                        "draggable": true,
+                                                                                        "hidable": "yes",
+                                                                                        "allowEventPropagation": true,
+                                                                                        "width": "manual",
+                                                                                        "minWidth": "auto",
+                                                                                        "minWidthLimit": 100,
+                                                                                        "size": 10,
                                                                                         "alignment": "left",
                                                                                         "wrapText": false
                                                                                     }
@@ -1094,36 +554,36 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                 rowClass={undefined}
                                                                                 onClickTrigger={"double"}
                                                                                 onClick={ListActionProperty({
-                                                                                    "action": { "type": "openPage", "argMap": { "param$DeployedKBRetrieval": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstAIBot/DeployedKBRetrieval_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": false },
+                                                                                    "action": { "type": "openPage", "argMap": { "param$BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "object" } }, "config": { "name": "MyFirstAIBot/BotConfig_NewEdit.page.xml", "title": t([ { "type": "literal", "value": "Edit Bot Configuration" } ]), "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": false },
                                                                                     "abortOnServerValidation": false,
-                                                                                    "dataSourceId": "p.9",
+                                                                                    "dataSourceId": "p.4",
                                                                                     "argumentTypes": { }
                                                                                 })}
                                                                                 onSelectionChange={undefined}
                                                                                 columnsSortable={true}
                                                                                 columnsResizable={true}
                                                                                 columnsDraggable={true}
-                                                                                columnsHidable={false}
+                                                                                columnsHidable={true}
                                                                                 configurationStorageType={"attribute"}
                                                                                 filtersPlaceholder={[
-                                                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton10$visibility"
-                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton10$visibility"
+                                                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton2$visibility"
+                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton2$visibility"
                                                                                         visible={ExpressionProperty({
                                                                                             "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
                                                                                         })}
                                                                                         contents={[
-                                                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton10"
-                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton10"
-                                                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton10"}
-                                                                                                class={"mx-name-actionButton10 spacing-outer-bottom"}
+                                                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton2"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton2"
+                                                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton2"}
+                                                                                                class={"mx-name-actionButton2 spacing-outer-bottom spacing-outer-right"}
                                                                                                 style={undefined}
                                                                                                 tabIndex={undefined}
                                                                                                 renderType={"button"}
                                                                                                 role={undefined}
-                                                                                                buttonClass={"btn-success"}
+                                                                                                buttonClass={"btn-default"}
                                                                                                 caption={t([
                                                                                                     ExpressionProperty({
-                                                                                                        "expression": { "expr": { "type": "literal", "value": "New Retrieval" }, "args": {} }
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "New" }, "args": {} }
                                                                                                     })
                                                                                                 ])}
                                                                                                 tooltip={TextProperty({
@@ -1131,11 +591,133 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                                         ""
                                                                                                     ])
                                                                                                 })}
-                                                                                                icon={WebIconProperty({
-                                                                                                    "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-add" }
-                                                                                                })}
+                                                                                                icon={undefined}
                                                                                                 action={ActionProperty({
-                                                                                                    "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "7753VpuVYlmYk7+f4kFmHg", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                    "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "hMIsa0m24FmgiLdGtTR4cw", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                    "abortOnServerValidation": true
+                                                                                                })} />
+                                                                                        ]} />,
+                                                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton1$visibility"
+                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton1$visibility"
+                                                                                        visible={ExpressionProperty({
+                                                                                            "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                        })}
+                                                                                        contents={[
+                                                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton1"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton1"
+                                                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton1"}
+                                                                                                class={"mx-name-actionButton1 spacing-outer-bottom spacing-outer-right"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined}
+                                                                                                renderType={"button"}
+                                                                                                role={undefined}
+                                                                                                buttonClass={"btn-default"}
+                                                                                                caption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Edit" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                tooltip={TextProperty({
+                                                                                                    "value": t([
+                                                                                                        ""
+                                                                                                    ])
+                                                                                                })}
+                                                                                                icon={undefined}
+                                                                                                action={ActionProperty({
+                                                                                                    "action": { "type": "openPage", "argMap": { "param$BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "name": "MyFirstAIBot/BotConfig_NewEdit.page.xml", "title": t([ { "type": "literal", "value": "Edit Bot Configuration" } ]), "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                    "abortOnServerValidation": true
+                                                                                                })} />
+                                                                                        ]} />,
+                                                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton3$visibility"
+                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton3$visibility"
+                                                                                        visible={ExpressionProperty({
+                                                                                            "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                        })}
+                                                                                        contents={[
+                                                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton3"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton3"
+                                                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton3"}
+                                                                                                class={"mx-name-actionButton3 spacing-outer-bottom spacing-outer-right"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined}
+                                                                                                renderType={"button"}
+                                                                                                role={undefined}
+                                                                                                buttonClass={"btn-default"}
+                                                                                                caption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Delete" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                tooltip={TextProperty({
+                                                                                                    "value": t([
+                                                                                                        ""
+                                                                                                    ])
+                                                                                                })}
+                                                                                                icon={undefined}
+                                                                                                action={ActionProperty({
+                                                                                                    "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "oD6+FjFxQVS/mdN1QlBzlw", "validate": "view", "confirmation": { "question": t([ "Are you sure?" ]), "proceed": t([ "Proceed" ]), "cancel": t([ "Cancel" ]) }, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                    "abortOnServerValidation": true
+                                                                                                })} />
+                                                                                        ]} />,
+                                                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton11$visibility"
+                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton11$visibility"
+                                                                                        visible={ExpressionProperty({
+                                                                                            "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                        })}
+                                                                                        contents={[
+                                                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton11"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton11"
+                                                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton11"}
+                                                                                                class={"mx-name-actionButton11"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined}
+                                                                                                renderType={"button"}
+                                                                                                role={undefined}
+                                                                                                buttonClass={"btn-default"}
+                                                                                                caption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Edit DeployedKnowledgeBase" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                tooltip={TextProperty({
+                                                                                                    "value": t([
+                                                                                                        ""
+                                                                                                    ])
+                                                                                                })}
+                                                                                                icon={undefined}
+                                                                                                action={ActionProperty({
+                                                                                                    "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "kApcRNemN1G9vnuRJ7wZZw", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                    "abortOnServerValidation": true
+                                                                                                })} />
+                                                                                        ]} />,
+                                                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton6$visibility"
+                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton6$visibility"
+                                                                                        visible={ExpressionProperty({
+                                                                                            "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                        })}
+                                                                                        contents={[
+                                                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton6"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton6"
+                                                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton6"}
+                                                                                                class={"mx-name-actionButton6 spacing-outer-bottom spacing-outer-right"}
+                                                                                                style={undefined}
+                                                                                                tabIndex={undefined}
+                                                                                                renderType={"button"}
+                                                                                                role={undefined}
+                                                                                                buttonClass={"btn-default"}
+                                                                                                caption={t([
+                                                                                                    ExpressionProperty({
+                                                                                                        "expression": { "expr": { "type": "literal", "value": "Make Default" }, "args": {} }
+                                                                                                    })
+                                                                                                ])}
+                                                                                                tooltip={TextProperty({
+                                                                                                    "value": t([
+                                                                                                        ""
+                                                                                                    ])
+                                                                                                })}
+                                                                                                icon={undefined}
+                                                                                                action={ActionProperty({
+                                                                                                    "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "CatTFycT2FKNSlpYoUUXwg", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
                                                                                                     "abortOnServerValidation": true
                                                                                                 })} />
                                                                                         ]} />
@@ -1212,18 +794,853 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                         "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
                                                                                     })
                                                                                 ])}
-                                                                                class={"mx-name-dataGrid2_1"}
+                                                                                class={"mx-name-grid1"}
                                                                                 style={undefined}
                                                                                 tabIndex={undefined} />
-                                                                        ]} />
+                                                                        ]}
+                                                                        ariaHidden={false} />
+                                                                ]} />,
+                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column1"
+                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid1$row0$column1"
+                                                                class={"col-lg col-md col"}
+                                                                style={undefined}
+                                                                content={[
+                                                                    <$DataView key="p.MyFirstAIBot.BotConfig_Overview.dataView1"
+                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.dataView1"
+                                                                        class={"mx-name-dataView1 form-horizontal"}
+                                                                        style={undefined}
+                                                                        tabIndex={undefined}
+                                                                        object={ListenObjectProperty({
+                                                                            "dataSourceId": "p.64",
+                                                                            "editable": true,
+                                                                            "listenTo": "p.MyFirstAIBot.BotConfig_Overview.grid1",
+                                                                            "operationId": "60+OcJZ20lyu/LfoLJH+OA"
+                                                                        })}
+                                                                        emptyMessage={TextProperty({
+                                                                            "value": t([
+                                                                                ""
+                                                                            ])
+                                                                        })}
+                                                                        body={[
+                                                                            <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.container1$visibility"
+                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.container1$visibility"
+                                                                                visible={ExpressionProperty({
+                                                                                    "expression": { "expr": { "type": "function", "name": "=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "ActionMicroflowSelection" }, { "type": "literal", "value": "ChatContext_ChatWithHistory_ActionMicroflow" } ] }, "args": { "currentObject": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataView1", "source": "object" } } }
+                                                                                })}
+                                                                                contents={[
+                                                                                    <$Container key="p.MyFirstAIBot.BotConfig_Overview.container1"
+                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.container1"
+                                                                                        class={"mx-name-container1 card"}
+                                                                                        style={undefined}
+                                                                                        renderMode={"div"}
+                                                                                        onClick={undefined}
+                                                                                        content={[
+                                                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2"
+                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2"
+                                                                                                class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid"}
+                                                                                                style={undefined}
+                                                                                                content={[
+                                                                                                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0"
+                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0"
+                                                                                                        class={"row"}
+                                                                                                        style={undefined}
+                                                                                                        content={[
+                                                                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0$column0"
+                                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row0$column0"
+                                                                                                                class={"col-lg col-md col"}
+                                                                                                                style={undefined}
+                                                                                                                content={[
+                                                                                                                    <$Text key="p.MyFirstAIBot.BotConfig_Overview.text2"
+                                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.text2"
+                                                                                                                        class={"mx-name-text2 spacing-outer-bottom-medium"}
+                                                                                                                        style={undefined}
+                                                                                                                        caption={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Knowledge Base Retrievals (available in the chat)" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        renderMode={"h4"} />
+                                                                                                                ]} />
+                                                                                                        ]} />,
+                                                                                                    <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1"
+                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1"
+                                                                                                        class={"row"}
+                                                                                                        style={undefined}
+                                                                                                        content={[
+                                                                                                            <$Div key="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1$column0"
+                                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.layoutGrid2$row1$column0"
+                                                                                                                class={"col-lg col-md col"}
+                                                                                                                style={undefined}
+                                                                                                                content={[
+                                                                                                                    <$Datagrid key="p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1"
+                                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1"
+                                                                                                                        datasource={AssociationObjectListProperty({
+                                                                                                                            "dataSourceId": "p.15",
+                                                                                                                            "entity": "MyFirstAIBot.DeployedKBRetrieval",
+                                                                                                                            "scope": "p.MyFirstAIBot.BotConfig_Overview.dataView1",
+                                                                                                                            "operationId": "B5pw4ivUV1yHFw9Cnwz5Hw"
+                                                                                                                        })}
+                                                                                                                        refreshInterval={0}
+                                                                                                                        itemSelectionMethod={"checkbox"}
+                                                                                                                        itemSelectionMode={"clear"}
+                                                                                                                        showSelectAllToggle={true}
+                                                                                                                        columns={[
+                                                                                                                            {
+                                                                                                                                "showContentAs": "attribute",
+                                                                                                                                "attribute": ListAttributeProperty({
+                                                                                                                                    "path": "",
+                                                                                                                                    "entity": "MyFirstAIBot.DeployedKBRetrieval",
+                                                                                                                                    "attribute": "Name",
+                                                                                                                                    "attributeType": "String",
+                                                                                                                                    "sortable": true,
+                                                                                                                                    "filterable": true,
+                                                                                                                                    "dataSourceId": "p.15",
+                                                                                                                                    "isList": false
+                                                                                                                                }),
+                                                                                                                                "content": undefined,
+                                                                                                                                "dynamicText": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "exportValue": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "header": t([
+                                                                                                                                    ExpressionProperty({
+                                                                                                                                        "expression": { "expr": { "type": "literal", "value": "Name" }, "args": {} }
+                                                                                                                                    })
+                                                                                                                                ]),
+                                                                                                                                "tooltip": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "filter": [
+                                                                                                                                    <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter3"
+                                                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter3"
+                                                                                                                                        defaultValue={undefined}
+                                                                                                                                        defaultFilter={"contains"}
+                                                                                                                                        placeholder={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        adjustable={true}
+                                                                                                                                        delay={500}
+                                                                                                                                        onChange={undefined}
+                                                                                                                                        screenReaderButtonCaption={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        screenReaderInputCaption={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        attrChoice={"auto"}
+                                                                                                                                        linkedDs={undefined}
+                                                                                                                                        attributes={[]}
+                                                                                                                                        class={"mx-name-textFilter3"}
+                                                                                                                                        style={undefined}
+                                                                                                                                        tabIndex={undefined} />
+                                                                                                                                ],
+                                                                                                                                "visible": ExpressionProperty({
+                                                                                                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                                                                                                }),
+                                                                                                                                "sortable": true,
+                                                                                                                                "resizable": true,
+                                                                                                                                "draggable": true,
+                                                                                                                                "hidable": "yes",
+                                                                                                                                "allowEventPropagation": true,
+                                                                                                                                "width": "manual",
+                                                                                                                                "minWidth": "auto",
+                                                                                                                                "minWidthLimit": 100,
+                                                                                                                                "size": 4,
+                                                                                                                                "alignment": "left",
+                                                                                                                                "wrapText": false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "showContentAs": "attribute",
+                                                                                                                                "attribute": ListAttributeProperty({
+                                                                                                                                    "path": "",
+                                                                                                                                    "entity": "MyFirstAIBot.DeployedKBRetrieval",
+                                                                                                                                    "attribute": "Description",
+                                                                                                                                    "attributeType": "String",
+                                                                                                                                    "sortable": true,
+                                                                                                                                    "filterable": true,
+                                                                                                                                    "dataSourceId": "p.15",
+                                                                                                                                    "isList": false
+                                                                                                                                }),
+                                                                                                                                "content": undefined,
+                                                                                                                                "dynamicText": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "exportValue": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "header": t([
+                                                                                                                                    ExpressionProperty({
+                                                                                                                                        "expression": { "expr": { "type": "literal", "value": "Description" }, "args": {} }
+                                                                                                                                    })
+                                                                                                                                ]),
+                                                                                                                                "tooltip": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "filter": [
+                                                                                                                                    <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter4"
+                                                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter4"
+                                                                                                                                        defaultValue={undefined}
+                                                                                                                                        defaultFilter={"contains"}
+                                                                                                                                        placeholder={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        adjustable={true}
+                                                                                                                                        delay={500}
+                                                                                                                                        onChange={undefined}
+                                                                                                                                        screenReaderButtonCaption={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        screenReaderInputCaption={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        attrChoice={"auto"}
+                                                                                                                                        linkedDs={undefined}
+                                                                                                                                        attributes={[]}
+                                                                                                                                        class={"mx-name-textFilter4"}
+                                                                                                                                        style={undefined}
+                                                                                                                                        tabIndex={undefined} />
+                                                                                                                                ],
+                                                                                                                                "visible": ExpressionProperty({
+                                                                                                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                                                                                                }),
+                                                                                                                                "sortable": true,
+                                                                                                                                "resizable": true,
+                                                                                                                                "draggable": true,
+                                                                                                                                "hidable": "yes",
+                                                                                                                                "allowEventPropagation": true,
+                                                                                                                                "width": "manual",
+                                                                                                                                "minWidth": "auto",
+                                                                                                                                "minWidthLimit": 100,
+                                                                                                                                "size": 6,
+                                                                                                                                "alignment": "left",
+                                                                                                                                "wrapText": false
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "showContentAs": "customContent",
+                                                                                                                                "attribute": ListAttributeProperty({
+                                                                                                                                    "path": "",
+                                                                                                                                    "entity": "MyFirstAIBot.DeployedKBRetrieval",
+                                                                                                                                    "attribute": "Name",
+                                                                                                                                    "attributeType": "String",
+                                                                                                                                    "sortable": true,
+                                                                                                                                    "filterable": true,
+                                                                                                                                    "dataSourceId": "p.15",
+                                                                                                                                    "isList": false
+                                                                                                                                }),
+                                                                                                                                "content": TemplatedWidgetProperty({
+                                                                                                                                    "dataSourceId": "p.15",
+                                                                                                                                    "editable": false,
+                                                                                                                                    "children": () => [
+                                                                                                                                        <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton8$visibility"
+                                                                                                                                            $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton8$visibility"
+                                                                                                                                            visible={ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                                                                            })}
+                                                                                                                                            contents={[
+                                                                                                                                                <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton8"
+                                                                                                                                                    $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton8"
+                                                                                                                                                    buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton8"}
+                                                                                                                                                    class={"mx-name-actionButton8 btn-lg"}
+                                                                                                                                                    style={undefined}
+                                                                                                                                                    tabIndex={undefined}
+                                                                                                                                                    renderType={"link"}
+                                                                                                                                                    role={"button"}
+                                                                                                                                                    buttonClass={"btn-primary"}
+                                                                                                                                                    caption={t([
+                                                                                                                                                        ExpressionProperty({
+                                                                                                                                                            "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                                        })
+                                                                                                                                                    ])}
+                                                                                                                                                    tooltip={TextProperty({
+                                                                                                                                                        "value": t([
+                                                                                                                                                            ""
+                                                                                                                                                        ])
+                                                                                                                                                    })}
+                                                                                                                                                    icon={WebIconProperty({
+                                                                                                                                                        "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-pencil" }
+                                                                                                                                                    })}
+                                                                                                                                                    action={ActionProperty({
+                                                                                                                                                        "action": { "type": "openPage", "argMap": { "param$DeployedKBRetrieval": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstAIBot/DeployedKBRetrieval_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                                                                        "abortOnServerValidation": true
+                                                                                                                                                    })} />
+                                                                                                                                            ]} />,
+                                                                                                                                        <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton9$visibility"
+                                                                                                                                            $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton9$visibility"
+                                                                                                                                            visible={ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                                                                            })}
+                                                                                                                                            contents={[
+                                                                                                                                                <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton9"
+                                                                                                                                                    $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton9"
+                                                                                                                                                    buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton9"}
+                                                                                                                                                    class={"mx-name-actionButton9 btn-lg"}
+                                                                                                                                                    style={undefined}
+                                                                                                                                                    tabIndex={undefined}
+                                                                                                                                                    renderType={"link"}
+                                                                                                                                                    role={"button"}
+                                                                                                                                                    buttonClass={"btn-primary"}
+                                                                                                                                                    caption={t([
+                                                                                                                                                        ExpressionProperty({
+                                                                                                                                                            "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                                        })
+                                                                                                                                                    ])}
+                                                                                                                                                    tooltip={TextProperty({
+                                                                                                                                                        "value": t([
+                                                                                                                                                            ""
+                                                                                                                                                        ])
+                                                                                                                                                    })}
+                                                                                                                                                    icon={WebIconProperty({
+                                                                                                                                                        "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-trash-can" }
+                                                                                                                                                    })}
+                                                                                                                                                    action={ActionProperty({
+                                                                                                                                                        "action": { "type": "callMicroflow", "argMap": { "DeployedKBRetrieval": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1", "source": "object" } }, "config": { "operationId": "5mKCO5xcR1GFrJCXjczTXA", "validate": "view", "confirmation": { "question": t([ "Are you sure?" ]), "proceed": t([ "Proceed" ]), "cancel": t([ "Cancel" ]) }, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                                                                        "abortOnServerValidation": true
+                                                                                                                                                    })} />
+                                                                                                                                            ]} />
+                                                                                                                                    ]
+                                                                                                                                }),
+                                                                                                                                "dynamicText": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "exportValue": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "header": t([
+                                                                                                                                    ExpressionProperty({
+                                                                                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                                    })
+                                                                                                                                ]),
+                                                                                                                                "tooltip": t([
+                                                                                                                                    undefined
+                                                                                                                                ]),
+                                                                                                                                "filter": undefined,
+                                                                                                                                "visible": ExpressionProperty({
+                                                                                                                                    "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                                                                                                }),
+                                                                                                                                "sortable": false,
+                                                                                                                                "resizable": true,
+                                                                                                                                "draggable": true,
+                                                                                                                                "hidable": "yes",
+                                                                                                                                "allowEventPropagation": true,
+                                                                                                                                "width": "autoFit",
+                                                                                                                                "minWidth": "auto",
+                                                                                                                                "minWidthLimit": 100,
+                                                                                                                                "size": 1,
+                                                                                                                                "alignment": "left",
+                                                                                                                                "wrapText": false
+                                                                                                                            }
+                                                                                                                        ]}
+                                                                                                                        columnsFilterable={true}
+                                                                                                                        pageSize={20}
+                                                                                                                        pagination={"buttons"}
+                                                                                                                        pagingPosition={"bottom"}
+                                                                                                                        showPagingButtons={"always"}
+                                                                                                                        loadMoreButtonCaption={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Load More" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        showEmptyPlaceholder={"none"}
+                                                                                                                        emptyPlaceholder={undefined}
+                                                                                                                        rowClass={undefined}
+                                                                                                                        onClickTrigger={"double"}
+                                                                                                                        onClick={ListActionProperty({
+                                                                                                                            "action": { "type": "openPage", "argMap": { "param$DeployedKBRetrieval": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstAIBot/DeployedKBRetrieval_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": false },
+                                                                                                                            "abortOnServerValidation": false,
+                                                                                                                            "dataSourceId": "p.15",
+                                                                                                                            "argumentTypes": { }
+                                                                                                                        })}
+                                                                                                                        onSelectionChange={undefined}
+                                                                                                                        columnsSortable={true}
+                                                                                                                        columnsResizable={true}
+                                                                                                                        columnsDraggable={true}
+                                                                                                                        columnsHidable={false}
+                                                                                                                        configurationStorageType={"attribute"}
+                                                                                                                        filtersPlaceholder={[
+                                                                                                                            <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton10$visibility"
+                                                                                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton10$visibility"
+                                                                                                                                visible={ExpressionProperty({
+                                                                                                                                    "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                                                                                })}
+                                                                                                                                contents={[
+                                                                                                                                    <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton10"
+                                                                                                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton10"
+                                                                                                                                        buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton10"}
+                                                                                                                                        class={"mx-name-actionButton10 spacing-outer-bottom"}
+                                                                                                                                        style={undefined}
+                                                                                                                                        tabIndex={undefined}
+                                                                                                                                        renderType={"button"}
+                                                                                                                                        role={undefined}
+                                                                                                                                        buttonClass={"btn-success"}
+                                                                                                                                        caption={t([
+                                                                                                                                            ExpressionProperty({
+                                                                                                                                                "expression": { "expr": { "type": "literal", "value": "New Retrieval" }, "args": {} }
+                                                                                                                                            })
+                                                                                                                                        ])}
+                                                                                                                                        tooltip={TextProperty({
+                                                                                                                                            "value": t([
+                                                                                                                                                ""
+                                                                                                                                            ])
+                                                                                                                                        })}
+                                                                                                                                        icon={WebIconProperty({
+                                                                                                                                            "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-add" }
+                                                                                                                                        })}
+                                                                                                                                        action={ActionProperty({
+                                                                                                                                            "action": { "type": "callMicroflow", "argMap": { "BotConfig": { "widget": "p.MyFirstAIBot.BotConfig_Overview.grid1", "source": "selection" } }, "config": { "operationId": "7753VpuVYlmYk7+f4kFmHg", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                                                                            "abortOnServerValidation": true
+                                                                                                                                        })} />
+                                                                                                                                ]} />
+                                                                                                                        ]}
+                                                                                                                        filterSectionTitle={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        exportDialogLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Export progress" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        cancelExportLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Cancel data export" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        selectRowLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Select row" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        loadingType={"spinner"}
+                                                                                                                        showNumberOfRows={false}
+                                                                                                                        storeFiltersInPersonalization={true}
+                                                                                                                        selectAllRowsLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Select all rows" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        enableSelectAll={false}
+                                                                                                                        keepSelection={false}
+                                                                                                                        selectionCounterPosition={"bottom"}
+                                                                                                                        refreshIndicator={false}
+                                                                                                                        selectingAllLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Selecting all items..." }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        cancelSelectionLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Cancel selection" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        selectedCountTemplateSingular={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "%d row selected" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        selectedCountTemplatePlural={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "%d rows selected" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        selectAllText={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Select all rows in the data source" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        selectAllTemplate={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Select all %d rows in the data source" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        allSelectedText={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "All %d rows selected." }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        clearSelectionButtonLabel={t([
+                                                                                                                            ExpressionProperty({
+                                                                                                                                "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
+                                                                                                                            })
+                                                                                                                        ])}
+                                                                                                                        class={"mx-name-dataGrid2_1"}
+                                                                                                                        style={undefined}
+                                                                                                                        tabIndex={undefined} />
+                                                                                                                ]} />
+                                                                                                        ]} />
+                                                                                                ]} />
+                                                                                        ]}
+                                                                                        ariaHidden={false} />
+                                                                                ]} />
+                                                                        ]}
+                                                                        hideFooter={false}
+                                                                        footer={undefined} />
                                                                 ]} />
                                                         ]} />
+                                                ]} />
+                                        ]
+                                    },
+                                    {
+                                        "name": "tabPage2",
+                                        "caption": TextProperty({
+                                            "value": t([
+                                                "Knowledge Base Content"
+                                            ])
+                                        }),
+                                        "isDelayed": false,
+                                        "refreshOnShow": false,
+                                        "content": [
+                                            <$Datagrid key="p.MyFirstAIBot.BotConfig_Overview.dataGrid2_2"
+                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.dataGrid2_2"
+                                                datasource={DatabaseObjectListProperty({
+                                                    "dataSourceId": "p.22",
+                                                    "entity": "MyFirstAIBot.CustomKnowledgeBase",
+                                                    "operationId": "Cbgz5egeUlOGiDPmSAsE4g",
+                                                    "sort": []
+                                                })}
+                                                refreshInterval={0}
+                                                columns={[
+                                                    {
+                                                        "showContentAs": "attribute",
+                                                        "attribute": ListAttributeProperty({
+                                                            "path": "",
+                                                            "entity": "MyFirstAIBot.CustomKnowledgeBase",
+                                                            "attribute": "Content",
+                                                            "attributeType": "String",
+                                                            "sortable": true,
+                                                            "filterable": true,
+                                                            "dataSourceId": "p.22",
+                                                            "isList": false
+                                                        }),
+                                                        "content": undefined,
+                                                        "dynamicText": t([
+                                                            undefined
+                                                        ]),
+                                                        "exportValue": t([
+                                                            undefined
+                                                        ]),
+                                                        "header": t([
+                                                            ExpressionProperty({
+                                                                "expression": { "expr": { "type": "literal", "value": "Content" }, "args": {} }
+                                                            })
+                                                        ]),
+                                                        "tooltip": t([
+                                                            undefined
+                                                        ]),
+                                                        "filter": [
+                                                            <$DatagridTextFilter key="p.MyFirstAIBot.BotConfig_Overview.textFilter5"
+                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.textFilter5"
+                                                                attrChoice={"auto"}
+                                                                linkedDs={undefined}
+                                                                attributes={[]}
+                                                                defaultValue={undefined}
+                                                                defaultFilter={"contains"}
+                                                                placeholder={t([
+                                                                    ExpressionProperty({
+                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                    })
+                                                                ])}
+                                                                adjustable={true}
+                                                                delay={500}
+                                                                onChange={undefined}
+                                                                screenReaderButtonCaption={t([
+                                                                    ExpressionProperty({
+                                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                    })
+                                                                ])}
+                                                                screenReaderInputCaption={t([
+                                                                    ExpressionProperty({
+                                                                        "expression": { "expr": { "type": "literal", "value": "Search" }, "args": {} }
+                                                                    })
+                                                                ])}
+                                                                class={"mx-name-textFilter5"}
+                                                                style={undefined}
+                                                                tabIndex={undefined} />
+                                                        ],
+                                                        "visible": ExpressionProperty({
+                                                            "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                        }),
+                                                        "sortable": true,
+                                                        "resizable": true,
+                                                        "draggable": true,
+                                                        "hidable": "yes",
+                                                        "allowEventPropagation": true,
+                                                        "width": "autoFill",
+                                                        "minWidth": "auto",
+                                                        "minWidthLimit": 100,
+                                                        "size": 1,
+                                                        "alignment": "left",
+                                                        "wrapText": false
+                                                    },
+                                                    {
+                                                        "showContentAs": "customContent",
+                                                        "attribute": ListAttributeProperty({
+                                                            "path": "",
+                                                            "entity": "MyFirstAIBot.CustomKnowledgeBase",
+                                                            "attribute": "Content",
+                                                            "attributeType": "String",
+                                                            "sortable": true,
+                                                            "filterable": true,
+                                                            "dataSourceId": "p.22",
+                                                            "isList": false
+                                                        }),
+                                                        "content": TemplatedWidgetProperty({
+                                                            "dataSourceId": "p.22",
+                                                            "editable": false,
+                                                            "children": () => [
+                                                                <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton4$visibility"
+                                                                    $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton4$visibility"
+                                                                    visible={ExpressionProperty({
+                                                                        "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                    })}
+                                                                    contents={[
+                                                                        <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton4"
+                                                                            $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton4"
+                                                                            buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton4"}
+                                                                            class={"mx-name-actionButton4 btn-lg"}
+                                                                            style={undefined}
+                                                                            tabIndex={undefined}
+                                                                            renderType={"link"}
+                                                                            role={"button"}
+                                                                            buttonClass={"btn-primary"}
+                                                                            caption={t([
+                                                                                ExpressionProperty({
+                                                                                    "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                })
+                                                                            ])}
+                                                                            tooltip={TextProperty({
+                                                                                "value": t([
+                                                                                    ""
+                                                                                ])
+                                                                            })}
+                                                                            icon={WebIconProperty({
+                                                                                "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-pencil" }
+                                                                            })}
+                                                                            action={ActionProperty({
+                                                                                "action": { "type": "openPage", "argMap": { "param$CustomKnowledgeBase": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_2", "source": "object" } }, "config": { "name": "MyFirstAIBot/CustomKnowledgeBase_NewEdit.page.xml", "location": "content", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                "abortOnServerValidation": true
+                                                                            })} />
+                                                                    ]} />,
+                                                                <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton5$visibility"
+                                                                    $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton5$visibility"
+                                                                    visible={ExpressionProperty({
+                                                                        "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                                    })}
+                                                                    contents={[
+                                                                        <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton5"
+                                                                            $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton5"
+                                                                            buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton5"}
+                                                                            class={"mx-name-actionButton5 btn-lg"}
+                                                                            style={undefined}
+                                                                            tabIndex={undefined}
+                                                                            renderType={"link"}
+                                                                            role={"button"}
+                                                                            buttonClass={"btn-primary"}
+                                                                            caption={t([
+                                                                                ExpressionProperty({
+                                                                                    "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                                                })
+                                                                            ])}
+                                                                            tooltip={TextProperty({
+                                                                                "value": t([
+                                                                                    ""
+                                                                                ])
+                                                                            })}
+                                                                            icon={WebIconProperty({
+                                                                                "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-trash-can" }
+                                                                            })}
+                                                                            action={ActionProperty({
+                                                                                "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.MyFirstAIBot.BotConfig_Overview.dataGrid2_2", "source": "object" } }, "config": { "closePage": false, "operationId": "CZcORJeiCVa1HnqCFTrMHg" }, "disabledDuringExecution": true },
+                                                                                "abortOnServerValidation": true
+                                                                            })} />
+                                                                    ]} />
+                                                            ]
+                                                        }),
+                                                        "dynamicText": t([
+                                                            undefined
+                                                        ]),
+                                                        "exportValue": t([
+                                                            undefined
+                                                        ]),
+                                                        "header": t([
+                                                            ExpressionProperty({
+                                                                "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                            })
+                                                        ]),
+                                                        "tooltip": t([
+                                                            undefined
+                                                        ]),
+                                                        "filter": undefined,
+                                                        "visible": ExpressionProperty({
+                                                            "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
+                                                        }),
+                                                        "sortable": false,
+                                                        "resizable": true,
+                                                        "draggable": true,
+                                                        "hidable": "no",
+                                                        "allowEventPropagation": true,
+                                                        "width": "autoFit",
+                                                        "minWidth": "auto",
+                                                        "minWidthLimit": 100,
+                                                        "size": 1,
+                                                        "alignment": "left",
+                                                        "wrapText": false
+                                                    }
                                                 ]}
-                                                ariaHidden={false} />
-                                        ]} />
+                                                columnsFilterable={true}
+                                                onClickTrigger={"single"}
+                                                onClick={undefined}
+                                                onSelectionChange={undefined}
+                                                filtersPlaceholder={[
+                                                    <$ConditionalVisibilityWrapper key="p.MyFirstAIBot.BotConfig_Overview.actionButton7$visibility"
+                                                        $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton7$visibility"
+                                                        visible={ExpressionProperty({
+                                                            "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
+                                                        })}
+                                                        contents={[
+                                                            <$ActionButton key="p.MyFirstAIBot.BotConfig_Overview.actionButton7"
+                                                                $widgetId="p.MyFirstAIBot.BotConfig_Overview.actionButton7"
+                                                                buttonId={"p.MyFirstAIBot.BotConfig_Overview.actionButton7"}
+                                                                class={"mx-name-actionButton7"}
+                                                                style={undefined}
+                                                                tabIndex={undefined}
+                                                                renderType={"button"}
+                                                                role={undefined}
+                                                                buttonClass={"btn-primary"}
+                                                                caption={t([
+                                                                    ExpressionProperty({
+                                                                        "expression": { "expr": { "type": "literal", "value": "New Custom knowledge base" }, "args": {} }
+                                                                    })
+                                                                ])}
+                                                                tooltip={TextProperty({
+                                                                    "value": t([
+                                                                        ""
+                                                                    ])
+                                                                })}
+                                                                icon={WebIconProperty({
+                                                                    "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-add" }
+                                                                })}
+                                                                action={ActionProperty({
+                                                                    "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "IhXfU5foqFOIQQICE3eIug", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                    "abortOnServerValidation": true
+                                                                })} />
+                                                        ]} />
+                                                ]}
+                                                itemSelectionMethod={"checkbox"}
+                                                itemSelectionMode={"clear"}
+                                                showSelectAllToggle={true}
+                                                enableSelectAll={false}
+                                                keepSelection={false}
+                                                selectionCounterPosition={"bottom"}
+                                                loadingType={"spinner"}
+                                                refreshIndicator={false}
+                                                pageSize={20}
+                                                pagination={"buttons"}
+                                                showPagingButtons={"always"}
+                                                showNumberOfRows={false}
+                                                pagingPosition={"bottom"}
+                                                loadMoreButtonCaption={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Load More" }, "args": {} }
+                                                    })
+                                                ])}
+                                                showEmptyPlaceholder={"none"}
+                                                emptyPlaceholder={undefined}
+                                                rowClass={undefined}
+                                                columnsSortable={true}
+                                                columnsResizable={true}
+                                                columnsDraggable={true}
+                                                columnsHidable={true}
+                                                configurationStorageType={"attribute"}
+                                                storeFiltersInPersonalization={true}
+                                                filterSectionTitle={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                    })
+                                                ])}
+                                                exportDialogLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Export progress" }, "args": {} }
+                                                    })
+                                                ])}
+                                                cancelExportLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Cancel data export" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectRowLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Select row" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectAllRowsLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Select all rows" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectingAllLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Selecting all items..." }, "args": {} }
+                                                    })
+                                                ])}
+                                                cancelSelectionLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Cancel selection" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectedCountTemplateSingular={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "%d row selected" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectedCountTemplatePlural={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "%d rows selected" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectAllText={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Select all rows in the data source" }, "args": {} }
+                                                    })
+                                                ])}
+                                                selectAllTemplate={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Select all %d rows in the data source" }, "args": {} }
+                                                    })
+                                                ])}
+                                                allSelectedText={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "All %d rows selected." }, "args": {} }
+                                                    })
+                                                ])}
+                                                clearSelectionButtonLabel={t([
+                                                    ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "Clear selection" }, "args": {} }
+                                                    })
+                                                ])}
+                                                class={"mx-name-dataGrid2_2"}
+                                                style={undefined}
+                                                tabIndex={undefined} />
+                                        ]
+                                    }
                                 ]}
-                                hideFooter={false}
-                                footer={undefined} />
+                                hoistedSelections={[
+                                    "p.MyFirstAIBot.BotConfig_Overview.grid1"
+                                ]} />
                         ]} />
                 ]} />
         ]} />

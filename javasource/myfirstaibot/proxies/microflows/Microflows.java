@@ -196,6 +196,29 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_CustomKnowledgeBase_GetEmbeddingsAndStoreBuilder(
+		myfirstaibot.proxies.BotConfig _botConfig,
+		myfirstaibot.proxies.CustomKnowledgeBase _customKnowledgeBase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.ACT_CustomKnowledgeBase_GetEmbeddingsAndStore");
+		builder = builder.withParam("BotConfig", _botConfig);
+		builder = builder.withParam("CustomKnowledgeBase", _customKnowledgeBase);
+		return builder;
+	}
+
+	public static void aCT_CustomKnowledgeBase_GetEmbeddingsAndStore(
+		IContext context,
+		myfirstaibot.proxies.BotConfig _botConfig,
+		myfirstaibot.proxies.CustomKnowledgeBase _customKnowledgeBase
+	)
+	{
+		aCT_CustomKnowledgeBase_GetEmbeddingsAndStoreBuilder(
+				_botConfig,
+				_customKnowledgeBase
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_DeployedKBRetrieval_AddBuilder(
 		myfirstaibot.proxies.BotConfig _botConfig
 	)
@@ -428,6 +451,16 @@ public final class Microflows
 				_instruction
 			)
 			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_New_KnowledgeBase_ItemBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.ACT_New_KnowledgeBase_Item");
+		return builder;
+	}
+
+	public static void aCT_New_KnowledgeBase_Item(IContext context)
+	{
+		aCT_New_KnowledgeBase_ItemBuilder().execute(context);
 	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder advancedSettings_GetAndUpdateBuilder(
 		conversationalui.proxies.ChatContext _chatContext,
@@ -1187,6 +1220,110 @@ public final class Microflows
 			)
 			.execute(context);
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder chunkCollection_Embed_InsertBuilder(
+		genaicommons.proxies.DeployedModel _deployedModel_Embeddings,
+		genaicommons.proxies.ChunkCollection _chunkCollection,
+		genaicommons.proxies.DeployedKnowledgeBase _deployedKnowledgeBase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.ChunkCollection_Embed_Insert");
+		builder = builder.withParam("DeployedModel_Embeddings", _deployedModel_Embeddings);
+		builder = builder.withParam("ChunkCollection", _chunkCollection);
+		builder = builder.withParam("DeployedKnowledgeBase", _deployedKnowledgeBase);
+		return builder;
+	}
+
+	public static boolean chunkCollection_Embed_Insert(
+		IContext context,
+		genaicommons.proxies.DeployedModel _deployedModel_Embeddings,
+		genaicommons.proxies.ChunkCollection _chunkCollection,
+		genaicommons.proxies.DeployedKnowledgeBase _deployedKnowledgeBase
+	)
+	{
+		Object result = chunkCollection_Embed_InsertBuilder(
+				_deployedModel_Embeddings,
+				_chunkCollection,
+				_deployedKnowledgeBase
+			)
+			.execute(context);
+		return (boolean) result;
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder chunkCollection_Embed_ReplaceBuilder(
+		genaicommons.proxies.DeployedModel _deployedModel_Embeddings,
+		genaicommons.proxies.ChunkCollection _chunkCollection,
+		genaicommons.proxies.DeployedKnowledgeBase _deployedKnowledgeBase
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.ChunkCollection_Embed_Replace");
+		builder = builder.withParam("DeployedModel_Embeddings", _deployedModel_Embeddings);
+		builder = builder.withParam("ChunkCollection", _chunkCollection);
+		builder = builder.withParam("DeployedKnowledgeBase", _deployedKnowledgeBase);
+		return builder;
+	}
+
+	public static boolean chunkCollection_Embed_Replace(
+		IContext context,
+		genaicommons.proxies.DeployedModel _deployedModel_Embeddings,
+		genaicommons.proxies.ChunkCollection _chunkCollection,
+		genaicommons.proxies.DeployedKnowledgeBase _deployedKnowledgeBase
+	)
+	{
+		Object result = chunkCollection_Embed_ReplaceBuilder(
+				_deployedModel_Embeddings,
+				_chunkCollection,
+				_deployedKnowledgeBase
+			)
+			.execute(context);
+		return (boolean) result;
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder chunkCollection_Embed_RepopulateKnowledgeBaseBuilder(
+		genaicommons.proxies.ChunkCollection _chunkCollection,
+		genaicommons.proxies.DeployedKnowledgeBase _deployedKnowledgeBase,
+		genaicommons.proxies.DeployedModel _deployedModel_Embeddings
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.ChunkCollection_Embed_RepopulateKnowledgeBase");
+		builder = builder.withParam("ChunkCollection", _chunkCollection);
+		builder = builder.withParam("DeployedKnowledgeBase", _deployedKnowledgeBase);
+		builder = builder.withParam("DeployedModel_Embeddings", _deployedModel_Embeddings);
+		return builder;
+	}
+
+	public static boolean chunkCollection_Embed_RepopulateKnowledgeBase(
+		IContext context,
+		genaicommons.proxies.ChunkCollection _chunkCollection,
+		genaicommons.proxies.DeployedKnowledgeBase _deployedKnowledgeBase,
+		genaicommons.proxies.DeployedModel _deployedModel_Embeddings
+	)
+	{
+		Object result = chunkCollection_Embed_RepopulateKnowledgeBaseBuilder(
+				_chunkCollection,
+				_deployedKnowledgeBase,
+				_deployedModel_Embeddings
+			)
+			.execute(context);
+		return (boolean) result;
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder configurationSelection_DeployedKnowledgeBase_KnowledgeBaseBuilder(
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.ConfigurationSelection_DeployedKnowledgeBase_KnowledgeBase");
+		builder = builder.withParam("BotConfig", _botConfig);
+		return builder;
+	}
+
+	public static genaicommons.proxies.DeployedKnowledgeBase configurationSelection_DeployedKnowledgeBase_KnowledgeBase(
+		IContext context,
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		Object result = configurationSelection_DeployedKnowledgeBase_KnowledgeBaseBuilder(
+				_botConfig
+			)
+			.execute(context);
+		return result == null ? null : genaicommons.proxies.DeployedKnowledgeBase.initialize(context, (IMendixObject) result);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder contextExtension_CommitBuilder(
 		myfirstaibot.proxies.ContextExtension _contextExtension
 	)
@@ -1829,6 +1966,68 @@ public final class Microflows
 			.execute(context);
 		return (boolean) result;
 	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder knowledgeBase_ChunkCollection_CreateKnowledgebaseChunksBuilder(
+		myfirstaibot.proxies.CustomKnowledgeBase _knowledgeBaseItem,
+		genaicommons.proxies.ChunkCollection _chunkCollection
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.KnowledgeBase_ChunkCollection_CreateKnowledgebaseChunks");
+		builder = builder.withParam("KnowledgeBaseItem", _knowledgeBaseItem);
+		builder = builder.withParam("ChunkCollection", _chunkCollection);
+		return builder;
+	}
+
+	public static void knowledgeBase_ChunkCollection_CreateKnowledgebaseChunks(
+		IContext context,
+		myfirstaibot.proxies.CustomKnowledgeBase _knowledgeBaseItem,
+		genaicommons.proxies.ChunkCollection _chunkCollection
+	)
+	{
+		knowledgeBase_ChunkCollection_CreateKnowledgebaseChunksBuilder(
+				_knowledgeBaseItem,
+				_chunkCollection
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder knowledgeBaseUpdate_GetCreateBuilder(
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.KnowledgeBaseUpdate_GetCreate");
+		builder = builder.withParam("BotConfig", _botConfig);
+		return builder;
+	}
+
+	public static myfirstaibot.proxies.KnowledgeBaseUpdate knowledgeBaseUpdate_GetCreate(
+		IContext context,
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		Object result = knowledgeBaseUpdate_GetCreateBuilder(
+				_botConfig
+			)
+			.execute(context);
+		return result == null ? null : myfirstaibot.proxies.KnowledgeBaseUpdate.initialize(context, (IMendixObject) result);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder knowledgeBaseUpdate_UpdateBuilder(
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.KnowledgeBaseUpdate_Update");
+		builder = builder.withParam("BotConfig", _botConfig);
+		return builder;
+	}
+
+	public static void knowledgeBaseUpdate_Update(
+		IContext context,
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		knowledgeBaseUpdate_UpdateBuilder(
+				_botConfig
+			)
+			.execute(context);
+	}
 	public static com.mendix.core.actionmanagement.MicroflowCallBuilder message_AddAttachedDocumentBuilder(
 		genaicommons.proxies.Message _message,
 		myfirstaibot.proxies.AttachedDocument _attachedDocument
@@ -1966,6 +2165,35 @@ public final class Microflows
 		request_ApplyInstructions_MapAttachedDocumentsBuilder(
 				_request,
 				_chatContext
+			)
+			.execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Get_BotConfigurationBuilder()
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.SUB_Get_BotConfiguration");
+		return builder;
+	}
+
+	public static void sUB_Get_BotConfiguration(IContext context)
+	{
+		sUB_Get_BotConfigurationBuilder().execute(context);
+	}
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder sUB_Get_DeployedKnowledgeBase_Or_CreateBuilder(
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("MyFirstAIBot.SUB_Get_DeployedKnowledgeBase_Or_Create");
+		builder = builder.withParam("BotConfig", _botConfig);
+		return builder;
+	}
+
+	public static void sUB_Get_DeployedKnowledgeBase_Or_Create(
+		IContext context,
+		myfirstaibot.proxies.BotConfig _botConfig
+	)
+	{
+		sUB_Get_DeployedKnowledgeBase_Or_CreateBuilder(
+				_botConfig
 			)
 			.execute(context);
 	}

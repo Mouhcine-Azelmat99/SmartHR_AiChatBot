@@ -290,6 +290,17 @@ const region$Main = [
                                                                                                 "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "CuToddsomVurVjaMkOeiPw", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
                                                                                                 "skipClientValidation": true
                                                                                             })
+                                                                                        },
+                                                                                        {
+                                                                                            "caption": TextProperty({
+                                                                                                "value": t([
+                                                                                                    "PgVector Knowledge Base"
+                                                                                                ])
+                                                                                            }),
+                                                                                            "action": ActionProperty({
+                                                                                                "action": { "type": "openPage", "argMap": {}, "config": { "name": "PgVectorKnowledgeBase/DatabaseConfiguration_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": false },
+                                                                                                "skipClientValidation": true
+                                                                                            })
                                                                                         }
                                                                                     ]
                                                                                 },
@@ -514,6 +525,17 @@ const region$Main = [
                                     }),
                                     "action": ActionProperty({
                                         "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "CuToddsomVurVjaMkOeiPw", "validate": "view", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                        "skipClientValidation": true
+                                    })
+                                },
+                                {
+                                    "caption": TextProperty({
+                                        "value": t([
+                                            "PgVector Knowledge Base"
+                                        ])
+                                    }),
+                                    "action": ActionProperty({
+                                        "action": { "type": "openPage", "argMap": {}, "config": { "name": "PgVectorKnowledgeBase/DatabaseConfiguration_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": false },
                                         "skipClientValidation": true
                                     })
                                 }

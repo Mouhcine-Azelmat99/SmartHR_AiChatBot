@@ -21,10 +21,13 @@ public class BotConfig extends conversationalui.proxies.ProviderConfig
 		IsDefault("IsDefault"),
 		HasKnowledgeBase("HasKnowledgeBase"),
 		Architecture("Architecture"),
+		KnowledgeBaseName("KnowledgeBaseName"),
 		ActionMicroflow("ActionMicroflow"),
 		DisplayName("DisplayName"),
 		SystemPrompt("SystemPrompt"),
 		BotConfig_AmazonBedrockKnowledgeBase("MyFirstAIBot.BotConfig_AmazonBedrockKnowledgeBase"),
+		BotConfig_DatabaseConfiguration("MyFirstAIBot.BotConfig_DatabaseConfiguration"),
+		BotConfig_EmbeddingDeployedModel("MyFirstAIBot.BotConfig_EmbeddingDeployedModel"),
 		ProviderConfig_DeployedModel("ConversationalUI.ProviderConfig_DeployedModel");
 
 		private final java.lang.String metaName;
@@ -271,6 +274,42 @@ public class BotConfig extends conversationalui.proxies.ProviderConfig
 	}
 
 	/**
+	 * @return value of KnowledgeBaseName
+	 */
+	public final java.lang.String getKnowledgeBaseName()
+	{
+		return getKnowledgeBaseName(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of KnowledgeBaseName
+	 */
+	public final java.lang.String getKnowledgeBaseName(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.KnowledgeBaseName.toString());
+	}
+
+	/**
+	 * Set value of KnowledgeBaseName
+	 * @param knowledgebasename
+	 */
+	public final void setKnowledgeBaseName(java.lang.String knowledgebasename)
+	{
+		setKnowledgeBaseName(getContext(), knowledgebasename);
+	}
+
+	/**
+	 * Set value of KnowledgeBaseName
+	 * @param context
+	 * @param knowledgebasename
+	 */
+	public final void setKnowledgeBaseName(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String knowledgebasename)
+	{
+		getMendixObject().setValue(context, MemberNames.KnowledgeBaseName.toString(), knowledgebasename);
+	}
+
+	/**
 	 * @throws com.mendix.core.CoreException
 	 * @return value of BotConfig_AmazonBedrockKnowledgeBase
 	 */
@@ -314,6 +353,100 @@ public class BotConfig extends conversationalui.proxies.ProviderConfig
 			getMendixObject().setValue(context, MemberNames.BotConfig_AmazonBedrockKnowledgeBase.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.BotConfig_AmazonBedrockKnowledgeBase.toString(), botconfig_amazonbedrockknowledgebase.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of BotConfig_DatabaseConfiguration
+	 */
+	public final pgvectorknowledgebase.proxies.DatabaseConfiguration getBotConfig_DatabaseConfiguration() throws com.mendix.core.CoreException
+	{
+		return getBotConfig_DatabaseConfiguration(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of BotConfig_DatabaseConfiguration
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final pgvectorknowledgebase.proxies.DatabaseConfiguration getBotConfig_DatabaseConfiguration(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		pgvectorknowledgebase.proxies.DatabaseConfiguration result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.BotConfig_DatabaseConfiguration.toString());
+		if (identifier != null) {
+			result = pgvectorknowledgebase.proxies.DatabaseConfiguration.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of BotConfig_DatabaseConfiguration
+	 * @param botconfig_databaseconfiguration
+	 */
+	public final void setBotConfig_DatabaseConfiguration(pgvectorknowledgebase.proxies.DatabaseConfiguration botconfig_databaseconfiguration)
+	{
+		setBotConfig_DatabaseConfiguration(getContext(), botconfig_databaseconfiguration);
+	}
+
+	/**
+	 * Set value of BotConfig_DatabaseConfiguration
+	 * @param context
+	 * @param botconfig_databaseconfiguration
+	 */
+	public final void setBotConfig_DatabaseConfiguration(com.mendix.systemwideinterfaces.core.IContext context, pgvectorknowledgebase.proxies.DatabaseConfiguration botconfig_databaseconfiguration)
+	{
+		if (botconfig_databaseconfiguration == null) {
+			getMendixObject().setValue(context, MemberNames.BotConfig_DatabaseConfiguration.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.BotConfig_DatabaseConfiguration.toString(), botconfig_databaseconfiguration.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of BotConfig_EmbeddingDeployedModel
+	 */
+	public final genaicommons.proxies.DeployedModel getBotConfig_EmbeddingDeployedModel() throws com.mendix.core.CoreException
+	{
+		return getBotConfig_EmbeddingDeployedModel(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of BotConfig_EmbeddingDeployedModel
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final genaicommons.proxies.DeployedModel getBotConfig_EmbeddingDeployedModel(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		genaicommons.proxies.DeployedModel result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.BotConfig_EmbeddingDeployedModel.toString());
+		if (identifier != null) {
+			result = genaicommons.proxies.DeployedModel.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of BotConfig_EmbeddingDeployedModel
+	 * @param botconfig_embeddingdeployedmodel
+	 */
+	public final void setBotConfig_EmbeddingDeployedModel(genaicommons.proxies.DeployedModel botconfig_embeddingdeployedmodel)
+	{
+		setBotConfig_EmbeddingDeployedModel(getContext(), botconfig_embeddingdeployedmodel);
+	}
+
+	/**
+	 * Set value of BotConfig_EmbeddingDeployedModel
+	 * @param context
+	 * @param botconfig_embeddingdeployedmodel
+	 */
+	public final void setBotConfig_EmbeddingDeployedModel(com.mendix.systemwideinterfaces.core.IContext context, genaicommons.proxies.DeployedModel botconfig_embeddingdeployedmodel)
+	{
+		if (botconfig_embeddingdeployedmodel == null) {
+			getMendixObject().setValue(context, MemberNames.BotConfig_EmbeddingDeployedModel.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.BotConfig_EmbeddingDeployedModel.toString(), botconfig_embeddingdeployedmodel.getMendixObject().getId());
 		}
 	}
 

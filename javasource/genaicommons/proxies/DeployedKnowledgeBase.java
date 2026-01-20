@@ -81,6 +81,9 @@ public class DeployedKnowledgeBase implements com.mendix.systemwideinterfaces.co
 		if (mendixObject.isInstanceOf("OpenAIConnector.Index")) {
 			return openaiconnector.proxies.Index.initialize(context, mendixObject);
 		}
+		if (mendixObject.isInstanceOf("PgVectorKnowledgeBase.PgVectorKnowledgeBase")) {
+			return pgvectorknowledgebase.proxies.PgVectorKnowledgeBase.initialize(context, mendixObject);
+		}
 		return new genaicommons.proxies.DeployedKnowledgeBase(context, mendixObject);
 	}
 

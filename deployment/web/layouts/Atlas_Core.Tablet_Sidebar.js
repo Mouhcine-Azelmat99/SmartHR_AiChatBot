@@ -9,9 +9,9 @@ import { WebStaticImageProperty } from "mendix/WebStaticImageProperty";
 
 import { Container } from "mendix/widgets/web/Container";
 import { Header } from "mendix/widgets/web/Header";
-import * as ImageWidgetModule from "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
+import * as ImageWidgetModule from "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;   
-import "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
+import "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
 import { NavigationTree } from "mendix/widgets/web/NavigationTree";
 import { Placeholder } from "mendix/widgets/web/Placeholder";
 import { ScrollContainer } from "mendix/widgets/web/ScrollContainer";

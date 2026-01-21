@@ -10,7 +10,7 @@ export const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "9c5592e9-bf2d-48b2-b03c-547f45b0c6ed",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackScreenshotWidget").JS_ToggleFeedbackScreenshotWidget,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackScreenshotWidget").JS_ToggleFeedbackScreenshotWidget,
       "outputVar": "base64FromWidget",
       "parameters": []
     },

@@ -87,14 +87,14 @@ export default {
         mendixCopy({
             sources: [
                 {
-                    folder: "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/web/widgets",
+                    folder: "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/web/widgets",
                     exclude: [".js", ".mjs", ".css"],
                     include: "**",
                 },
             ],
         }),
         mendixServiceWorker({
-            deploymentDir: "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment",
+            deploymentDir: "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment",
         }),
         mendixOnlyWriteChanged(),
         alias({

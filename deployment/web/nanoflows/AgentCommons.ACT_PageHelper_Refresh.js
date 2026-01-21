@@ -6,7 +6,7 @@ export const ACT_PageHelper_Refresh = {
     {
       "type": "javaScriptActionCall",
       "label": "9cea37f9-5a60-4e16-9118-c7849c8002c6",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
       "parameters": [
         {
           "kind": "object",

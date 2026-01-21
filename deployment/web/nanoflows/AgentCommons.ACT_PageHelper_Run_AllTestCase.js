@@ -77,7 +77,7 @@ export const ACT_PageHelper_Run_AllTestCase = {
     {
       "type": "javaScriptActionCall",
       "label": "2279a5d6-d9d2-47e7-bc9e-f197a4bce38f",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",
@@ -91,7 +91,7 @@ export const ACT_PageHelper_Run_AllTestCase = {
     {
       "type": "javaScriptActionCall",
       "label": "cbcd6278-5d97-4576-a86e-ecb3a29ed1f3",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/webactions/actions/ScrollTo").ScrollTo,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/webactions/actions/ScrollTo").ScrollTo,
       "parameters": [
         {
           "kind": "primitive",
@@ -144,7 +144,7 @@ export const ACT_PageHelper_Run_AllTestCase = {
     {
       "type": "javaScriptActionCall",
       "label": "5489f936-318c-4e5e-ade5-a88a4a2cfa3d",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
       "parameters": [
         {
           "kind": "object",

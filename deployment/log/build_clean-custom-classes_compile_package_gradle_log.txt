@@ -1,19 +1,19 @@
 Initialized native services in: C:\Users\MouhcineAZELMAT\.gradle\native
 Initialized jansi services in: C:\Users\MouhcineAZELMAT\.gradle\native
 Received JVM installation metadata from 'C:\Users\MouhcineAZELMAT\AppData\Local\Programs\Mendix\OpenJDK\win-x64': {JAVA_HOME=C:\Users\MouhcineAZELMAT\AppData\Local\Programs\Mendix\OpenJDK\win-x64, JAVA_VERSION=21.0.2, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=21.0.2+13-LTS, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=21.0.2+13-LTS, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 6904). The daemon log file: C:\Users\MouhcineAZELMAT\.gradle\daemon\8.5\daemon-6904.out.log
-Starting 16th build in daemon [uptime: 2 hrs 50 mins 31.363 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 21% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 27196). The daemon log file: C:\Users\MouhcineAZELMAT\.gradle\daemon\8.5\daemon-27196.out.log
+Starting 18th build in daemon [uptime: 1 hrs 7 mins 25.493 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 21% of 384 MiB]
 Using 12 worker leases.
-Now considering [C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment, C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\TalentPilot\deployment] as hierarchies to watch
+Now considering [C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment, C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
 File system watching is active
 Starting Build
-Settings evaluated using settings file 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\settings.gradle'.
-Projects loaded. Root project using build file 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\build.gradle'.
+Settings evaluated using settings file 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\build.gradle'.
 Included projects: [root project 'deployment']
 
 > Configure project :
-Evaluating root project 'deployment' using build file 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\build.gradle'.
+Evaluating root project 'deployment' using build file 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\build.gradle'.
 All projects evaluated.
 Task name matched 'clean-custom-classes'
 Task name matched 'compile'
@@ -23,65 +23,64 @@ Selected primary task 'compile' from project :
 Selected primary task 'package' from project :
 Tasks to be executed: [task ':clean-custom-classes', task ':compile', task ':package']
 Tasks that were excluded: []
-Resolve mutations for :clean-custom-classes (Thread[#895,included builds,5,main]) started.
-:clean-custom-classes (Thread[#895,included builds,5,main]) started.
-destroyer locations for task group 0 (Thread[#899,Execution worker Thread 4,5,main]) started.
-destroyer locations for task group 1 (Thread[#904,Execution worker Thread 9,5,main]) started.
+Resolve mutations for :clean-custom-classes (Thread[#914,Execution worker,5,main]) started.
+:clean-custom-classes (Thread[#919,Execution worker Thread 6,5,main]) started.
+destroyer locations for task group 0 (Thread[#915,Execution worker Thread 2,5,main]) started.
+destroyer locations for task group 1 (Thread[#915,Execution worker Thread 2,5,main]) started.
 
 > Task :clean-custom-classes
 Caching disabled for task ':clean-custom-classes' because:
   Build cache is disabled
 Task ':clean-custom-classes' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
-Resolve mutations for :compile (Thread[#895,included builds,5,main]) started.
-:compile (Thread[#895,included builds,5,main]) started.
+Resolve mutations for :compile (Thread[#919,Execution worker Thread 6,5,main]) started.
+:compile (Thread[#913,included builds,5,main]) started.
 
 > Task :compile
 Caching disabled for task ':compile' because:
   Build cache is disabled
 Task ':compile' is not up-to-date because:
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\administration has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\administration\proxies has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\agentcommons has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\amazonbedrockconnector has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\atlas_web_content has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\awsauthentication has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\communitycommons has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\conversationalui has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\databaseconnector has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\datawidgets has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\encryption has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\feedbackmodule has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\genaicommons has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\mcpclient has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\mistralconnector has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\mxgenaiconnector has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\myfirstaibot has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\nanoflowcommons has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\openaiconnector has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\pdfextraction has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\pgvectorknowledgebase has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\system has been removed.
-  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\run\bin\webactions has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\administration has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\administration\proxies has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\agentcommons has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\amazonbedrockconnector has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\atlas_web_content has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\awsauthentication has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\communitycommons has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\conversationalui has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\databaseconnector has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\datawidgets has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\encryption has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\feedbackmodule has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\genaicommons has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\mcpclient has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\mistralconnector has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\mxgenaiconnector has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\myfirstaibot has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\nanoflowcommons has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\openaiconnector has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\pdfextraction has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\pgvectorknowledgebase has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\system has been removed.
+  Output property 'destinationDirectory' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\run\bin\webactions has been removed.
 The input changes require a full rebuild for incremental task ':compile'.
 Full recompilation is required because no incremental change information is available. This is usually caused by clean builds or changing compiler arguments.
 Compiling with toolchain 'C:\Users\MouhcineAZELMAT\AppData\Local\Programs\Mendix\OpenJDK\win-x64'.
 Compiling with JDK Java compiler API.
-Class dependency analysis for incremental compilation took 34.509 secs.
-Created classpath snapshot for incremental compilation in 0.039 secs.
-Resolve mutations for :package (Thread[#895,included builds,5,main]) started.
-:package (Thread[#895,included builds,5,main]) started.
+Class dependency analysis for incremental compilation took 19.033 secs.
+Created classpath snapshot for incremental compilation in 0.049 secs.
+Resolve mutations for :package (Thread[#913,included builds,5,main]) started.
+:package (Thread[#913,included builds,5,main]) started.
 
-> Task :package
+> Task :package UP-TO-DATE
 Caching disabled for task ':package' because:
   Build cache is disabled
-Task ':package' is not up-to-date because:
-  Output property 'archiveFile' file C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment\model\bundles\project.jar has been removed.
+Skipping task ':package' as it is up-to-date.
 
-BUILD SUCCESSFUL in 51s
-3 actionable tasks: 3 executed
-Watched directory hierarchies: [C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment, C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\TalentPilot\deployment]
+BUILD SUCCESSFUL in 33s
+3 actionable tasks: 2 executed, 1 up-to-date
+Watched directory hierarchies: [C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment, C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRAssistance\deployment]
 
 
 Note: Some input files use or override a deprecated API.

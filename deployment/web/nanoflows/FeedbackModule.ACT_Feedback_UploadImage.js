@@ -26,7 +26,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "5bd1afa9-ad4f-4af1-afb9-560d4ba52c80",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/JS_UploadAndConvertToFileBlobURL").JS_UploadAndConvertToFileBlobURL,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/JS_UploadAndConvertToFileBlobURL").JS_UploadAndConvertToFileBlobURL,
       "outputVar": "fileBlobURL",
       "parameters": [
         {
@@ -170,7 +170,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "5e18f124-4d77-4d87-aff1-f7dd33bdce5e",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackAnnotateWidget").JS_ToggleFeedbackAnnotateWidget,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackAnnotateWidget").JS_ToggleFeedbackAnnotateWidget,
       "outputVar": "base64ImageFromWidget",
       "parameters": [
         {
@@ -210,7 +210,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "4812521f-fa19-4b33-acbd-8d2160455937",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -231,7 +231,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "e0f679b5-f865-4b40-99b3-fbb6e86d102a",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/JS_RevokeUploadedFileFromMemory").JS_RevokeUploadedFileFromMemory,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/JS_RevokeUploadedFileFromMemory").JS_RevokeUploadedFileFromMemory,
       "parameters": [
         {
           "kind": "primitive",

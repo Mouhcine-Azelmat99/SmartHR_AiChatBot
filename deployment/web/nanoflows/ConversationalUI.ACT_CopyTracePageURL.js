@@ -22,7 +22,7 @@ export const ACT_CopyTracePageURL = {
     {
       "type": "javaScriptActionCall",
       "label": "60ad1a59-9d07-46c4-a8eb-308b34e938c0",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/conversationalui/actions/JS_CopyToClipboard").JS_CopyToClipboard,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/conversationalui/actions/JS_CopyToClipboard").JS_CopyToClipboard,
       "parameters": [
         {
           "kind": "primitive",
@@ -46,7 +46,7 @@ export const ACT_CopyTracePageURL = {
     {
       "type": "javaScriptActionCall",
       "label": "d7b05e6f-1d07-471b-8aa7-89c9b2438016",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

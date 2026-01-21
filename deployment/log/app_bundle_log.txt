@@ -38,3 +38,26 @@
 2026-01-20T20:07:35.881Z INFO Bundling started
 2026-01-20T20:07:45.896Z INFO Bundling finished in 10016 milliseconds
 2026-01-20T20:07:45.897Z INFO Build stopped
+2026-01-21T11:14:57.554Z INFO Build started
+2026-01-21T11:14:57.571Z INFO Bundling started
+2026-01-21T11:15:41.962Z ERROR Bundling failed
+(plugin rollup-plugin-mendix-serviceworker) Error: ENOENT: no such file or directory, open 'C:\Users\MouhcineAZELMAT\Desktop\Mendix Projects\SmartHRChatBot\deployment\web\index-react.html'
+    at async open (node:internal/fs/promises:639:25)
+    at async Object.readFile (node:internal/fs/promises:1243:14)
+    at async generateCacheEntry (file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/rollup-plugin-mendix-serviceworker.mjs:82:23)
+    at async Promise.all (index 1)
+    at async Object.writeBundle (file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/rollup-plugin-mendix-serviceworker.mjs:15:23)
+    at async Promise.all (index 0)
+    at async PluginDriver.hookParallel (file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/rollup/dist/es/shared/node-entry.js:20740:9)
+    at async file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/rollup/dist/es/shared/node-entry.js:21783:13
+    at async catchUnfinishedHookActions (file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/rollup/dist/es/shared/node-entry.js:21158:16)
+    at async Promise.all (index 0)
+    at async Task.run (file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/rollup/dist/es/shared/watch.js:9233:17)
+    at async Watcher.run (file:///C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix%2010.24.8/Mendix/10.24.8.80126/modeler/tools/node/node_modules/rollup/dist/es/shared/watch.js:9159:13)
+
+
+2026-01-21T11:15:41.962Z INFO Build stopped
+2026-01-21T11:17:13.616Z INFO Build started
+2026-01-21T11:17:13.618Z INFO Bundling started
+2026-01-21T11:17:32.383Z INFO Bundling finished in 18765 milliseconds
+2026-01-21T11:17:32.383Z INFO Build stopped

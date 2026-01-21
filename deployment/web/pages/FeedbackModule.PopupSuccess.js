@@ -12,9 +12,9 @@ import { ActionButton } from "mendix/widgets/web/ActionButton";
 import { Container } from "mendix/widgets/web/Container";
 import { DataView } from "mendix/widgets/web/DataView";
 import { Div } from "mendix/widgets/web/Div";
-import * as ImageWidgetModule from "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
+import * as ImageWidgetModule from "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;   
-import "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
+import "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
 import { Text } from "mendix/widgets/web/Text";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 

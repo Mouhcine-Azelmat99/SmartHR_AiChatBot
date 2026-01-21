@@ -43,7 +43,7 @@ export const ACT_Feedback_ClearForm = {
     {
       "type": "javaScriptActionCall",
       "label": "af0cafce-e1fe-47e0-a46d-1bf3158b4dde",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

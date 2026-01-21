@@ -10,7 +10,7 @@ export const SUB_Feedback_GetOrCreate = {
       "body": [
         {
           "type": "javaScriptActionCall",
-          "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/GetStorageItemObject").GetStorageItemObject,
+          "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/GetStorageItemObject").GetStorageItemObject,
           "outputVar": "LocalFeedback",
           "parameters": [
             {

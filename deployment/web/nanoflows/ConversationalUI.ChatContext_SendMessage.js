@@ -43,7 +43,7 @@ export const ChatContext_SendMessage = {
     {
       "type": "javaScriptActionCall",
       "label": "fb120fd6-f7e1-4fe1-9d1f-11575e218cd6",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
       "parameters": [
         {
           "kind": "object",
@@ -72,7 +72,7 @@ export const ChatContext_SendMessage = {
     {
       "type": "javaScriptActionCall",
       "label": "9223ca6d-53e3-40d4-a047-cc6f43b6f0f3",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/webactions/actions/SetFocus").SetFocus,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/webactions/actions/SetFocus").SetFocus,
       "parameters": [
         {
           "kind": "primitive",

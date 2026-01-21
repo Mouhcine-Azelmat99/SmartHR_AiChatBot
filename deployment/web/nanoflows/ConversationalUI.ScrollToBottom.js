@@ -6,7 +6,7 @@ export const ScrollToBottom = {
     {
       "type": "javaScriptActionCall",
       "label": "969dae52-0307-4d2e-b5e0-a265165e4345",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",
@@ -20,7 +20,7 @@ export const ScrollToBottom = {
     {
       "type": "javaScriptActionCall",
       "label": "1945f8d9-aeac-42b7-9d5a-29494e001323",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/webactions/actions/ScrollTo").ScrollTo,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/webactions/actions/ScrollTo").ScrollTo,
       "parameters": [
         {
           "kind": "primitive",

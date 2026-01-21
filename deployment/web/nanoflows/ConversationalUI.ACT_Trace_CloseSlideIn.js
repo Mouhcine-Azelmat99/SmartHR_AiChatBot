@@ -21,7 +21,7 @@ export const ACT_Trace_CloseSlideIn = {
     {
       "type": "javaScriptActionCall",
       "label": "11795e66-36e1-47a2-ae02-c01268b3c9f7",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/conversationalui/actions/JS_SlideIn_Close").JS_SlideIn_Close,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/conversationalui/actions/JS_SlideIn_Close").JS_SlideIn_Close,
       "parameters": [
         {
           "kind": "primitive",
@@ -42,7 +42,7 @@ export const ACT_Trace_CloseSlideIn = {
     {
       "type": "javaScriptActionCall",
       "label": "aa8d8515-150d-4819-b12f-0d1361c550cb",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

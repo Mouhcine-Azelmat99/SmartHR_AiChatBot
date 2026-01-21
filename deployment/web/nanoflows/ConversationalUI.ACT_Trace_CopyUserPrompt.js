@@ -48,7 +48,7 @@ export const ACT_Trace_CopyUserPrompt = {
     {
       "type": "javaScriptActionCall",
       "label": "b7679a90-6637-4026-8d80-f49bc006df20",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

@@ -133,7 +133,7 @@ export const SUB_Feedback_ResetLocalStorage = {
     {
       "type": "javaScriptActionCall",
       "label": "20fc79b1-c528-46bb-a8f0-bbce25fe086b",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

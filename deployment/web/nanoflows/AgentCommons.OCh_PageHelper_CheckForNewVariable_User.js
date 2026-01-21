@@ -94,7 +94,7 @@ export const OCh_PageHelper_CheckForNewVariable_User = {
     {
       "type": "javaScriptActionCall",
       "label": "7fc6c327-9748-4b30-a2c2-1f9eb3603fe6",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
       "parameters": [
         {
           "kind": "object",

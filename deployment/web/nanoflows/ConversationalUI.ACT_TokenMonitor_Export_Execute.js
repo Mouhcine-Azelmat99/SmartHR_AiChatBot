@@ -6,7 +6,7 @@ export const ACT_TokenMonitor_Export_Execute = {
     {
       "type": "javaScriptActionCall",
       "label": "6690ca8e-7f14-442f-93a2-49485bde889d",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/datawidgets/actions/Export_To_Excel").Export_To_Excel,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/datawidgets/actions/Export_To_Excel").Export_To_Excel,
       "outputVar": "ExportSuccess",
       "parameters": [
         {

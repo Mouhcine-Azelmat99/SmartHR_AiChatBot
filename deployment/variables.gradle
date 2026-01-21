@@ -2,11 +2,11 @@ ext {
 	mendixJavaVersion = 21
 	mendixInstallDir = "C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126"
 	projectName = "SmartHRAssistance"
-	projectSafeName = "SmartHRAssistance"
-	mendixProjectDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance"
-	deploymentDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment"
-	dataSnapshotFile = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/data-snapshot.zip"
-	dataDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/data"
+	projectSafeName = "SmartHRChatBot"
+	mendixProjectDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot"
+	deploymentDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment"
+	dataSnapshotFile = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/data-snapshot.zip"
+	dataDir = "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/data"
 	extractDataSnapshot = false
 	templatesDir = "C:/Users/MouhcineAZELMAT/AppData/Local/Programs/mendix 10.24.8/Mendix/10.24.8.80126/modeler/runtemplates"
 	runDir = "run"

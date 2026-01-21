@@ -27,7 +27,7 @@
     "ConversationalUI.LogNode": "ConversationalUI",
     "Encryption.LogNode": "Encryption",
     "Encryption.EncryptionPrefix": "{AES3}",
-    "Encryption.EncryptionKey": "VkZGbRARVkZGbRARVkZGbRARVkZGbRAR",
+    "Encryption.EncryptionKey": "TaN9YPV0AvqPvGJY0TNb6dDiNYxHi7z0",
     "Encryption.LegacyEncryptionKey": "",
     "FeedbackModule.LocalStorageKey": "mxfeedback-form-data",
     "GenAICommons.StoreTraces": "False",

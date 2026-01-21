@@ -48,7 +48,7 @@ export const ACT_ModelSpan_CopyAssistantResponse = {
     {
       "type": "javaScriptActionCall",
       "label": "73f84b99-e1c7-4b45-8f10-86b33c933b32",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

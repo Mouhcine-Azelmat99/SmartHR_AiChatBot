@@ -83,7 +83,7 @@ export const DS_Feedback_Populate = {
     {
       "type": "javaScriptActionCall",
       "label": "75ec2776-e39d-4000-9e91-02b0698d5c64",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/JS_PopulateFeedbackMetadata").JS_PopulateFeedbackMetadata,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/JS_PopulateFeedbackMetadata").JS_PopulateFeedbackMetadata,
       "parameters": [
         {
           "kind": "object",
@@ -97,7 +97,7 @@ export const DS_Feedback_Populate = {
     {
       "type": "javaScriptActionCall",
       "label": "cfcfcaa3-186f-4915-b963-5cdfd1853fb5",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

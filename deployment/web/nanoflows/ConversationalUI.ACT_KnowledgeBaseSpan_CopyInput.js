@@ -48,7 +48,7 @@ export const ACT_KnowledgeBaseSpan_CopyInput = {
     {
       "type": "javaScriptActionCall",
       "label": "36aac776-22f7-4c68-acfe-51bcec5a002d",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

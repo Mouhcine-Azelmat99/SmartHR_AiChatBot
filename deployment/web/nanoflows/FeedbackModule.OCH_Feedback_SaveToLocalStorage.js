@@ -6,7 +6,7 @@ export const OCH_Feedback_SaveToLocalStorage = {
     {
       "type": "javaScriptActionCall",
       "label": "f4fc9ea9-8271-4bf5-9cd3-89737f4d67fe",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

@@ -6,7 +6,7 @@ export const ACT_Textarea_ExecuteButtonAction = {
     {
       "type": "javaScriptActionCall",
       "label": "e0e074eb-6a49-48b9-b047-863228838134",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/conversationalui/actions/Textarea_ExecuteButtonAction").Textarea_ExecuteButtonAction,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/conversationalui/actions/Textarea_ExecuteButtonAction").Textarea_ExecuteButtonAction,
       "parameters": [
         {
           "kind": "primitive",

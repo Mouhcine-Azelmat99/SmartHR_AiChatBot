@@ -1,13 +1,13 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-BgmvTcvh.js';
-import { PageFragment, ExpressionProperty } from '../Placeholder-Cb4MO343.js';
-import { ActionButton, ActionProperty } from '../ActionButton-7BeRw6Eb.js';
-import { TextProperty } from '../TextProperty-BV2oKBbq.js';
-import { Container } from '../Container-LyamVXag.js';
-import { Div } from '../Div-DznaFJxI.js';
-import { Text } from '../Text-mON8QAZM.js';
-import { content as content$1 } from '../MxGenAIConnector.Popup_MxGenAI-BEOE18so.js';
-import '../InlineText-D4EmJMFt.js';
-import '../ScrollContainer-U0HrQ4Hh.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-C4WMXW3y.js';
+import { PageFragment, ExpressionProperty } from '../Placeholder-BoF30MPe.js';
+import { ActionButton, ActionProperty } from '../ActionButton-B8GWmPwn.js';
+import { TextProperty } from '../TextProperty-C-8HEWcn.js';
+import { Container } from '../Container-PSi6m2QL.js';
+import { Div } from '../Div-DnhZCXw4.js';
+import { Text } from '../Text-Ct6rfb-k.js';
+import { content as content$1 } from '../MxGenAIConnector.Popup_MxGenAI-D-RTCxJ_.js';
+import '../InlineText-f914ePRH.js';
+import '../ScrollContainer-DO1bE89X.js';
 
 const React = { createElement: reactExports.createElement };
 const { $Div, $Container, $Text, $ActionButton } = asPluginWidgets({ Div, Container, Text, ActionButton });

@@ -45,7 +45,7 @@ export const ACT_PageHelper_SelectDraftTestCase = {
     {
       "type": "javaScriptActionCall",
       "label": "11b1556c-f124-466d-b89a-d89f48cb8911",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/webactions/actions/SetFocus").SetFocus,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/webactions/actions/SetFocus").SetFocus,
       "parameters": [
         {
           "kind": "primitive",
@@ -59,7 +59,7 @@ export const ACT_PageHelper_SelectDraftTestCase = {
     {
       "type": "javaScriptActionCall",
       "label": "8def4182-bdc8-4821-924e-4d427c015e8b",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/RefreshObject").RefreshObject,
       "parameters": [
         {
           "kind": "object",

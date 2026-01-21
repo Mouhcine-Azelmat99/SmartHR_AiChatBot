@@ -48,7 +48,7 @@ export const OCH_TraceFiltering_Agent = {
     {
       "type": "javaScriptActionCall",
       "label": "fadb8740-d45e-4cc1-b62e-34a45891c3ae",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

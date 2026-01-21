@@ -6,7 +6,7 @@ export const CopyToClipboard = {
     {
       "type": "javaScriptActionCall",
       "label": "3d9a437b-1fab-4efa-81b3-579039d4caac",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/conversationalui/actions/JS_CopyToClipboard").JS_CopyToClipboard,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/conversationalui/actions/JS_CopyToClipboard").JS_CopyToClipboard,
       "parameters": [
         {
           "kind": "primitive",
@@ -20,7 +20,7 @@ export const CopyToClipboard = {
     {
       "type": "javaScriptActionCall",
       "label": "18348f21-4cb2-4800-a51b-6b8a810090d9",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",

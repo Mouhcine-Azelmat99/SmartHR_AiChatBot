@@ -8,7 +8,7 @@ import { ListAttributeProperty } from "mendix/ListAttributeProperty";
 import { ListExpressionProperty } from "mendix/ListExpressionProperty";
 
 import { Container } from "mendix/widgets/web/Container";
-import * as DatagridWidgetModule from "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
+import * as DatagridWidgetModule from "C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;   
 import { Div } from "mendix/widgets/web/Div";
 import { Text } from "mendix/widgets/web/Text";

@@ -6,7 +6,7 @@ export const ACT_PageHelper_CopyAgentURL = {
     {
       "type": "javaScriptActionCall",
       "label": "6dae2187-390a-4b19-ae26-e071d4346af7",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/agentcommons/actions/JS_CopyToClipboard").JS_CopyToClipboard,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/agentcommons/actions/JS_CopyToClipboard").JS_CopyToClipboard,
       "parameters": [
         {
           "kind": "primitive",
@@ -31,7 +31,7 @@ export const ACT_PageHelper_CopyAgentURL = {
     {
       "type": "javaScriptActionCall",
       "label": "3371be8c-a610-4e4d-80be-1c6d92e7546e",
-      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRAssistance/javascriptsource/nanoflowcommons/actions/Wait").Wait,
+      "action": () => require("C:/Users/MouhcineAZELMAT/Desktop/Mendix Projects/SmartHRChatBot/javascriptsource/nanoflowcommons/actions/Wait").Wait,
       "parameters": [
         {
           "kind": "primitive",
